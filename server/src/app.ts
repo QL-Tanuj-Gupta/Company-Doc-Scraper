@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import projectRoutes from "./routes/project.routes";
-import chunkRoutes from "./routes/chunk.routes";
 
 const app = express();
 
@@ -16,6 +15,5 @@ app.get("/health", (_req, res) => {
 });
 
 app.use("/api/projects", projectRoutes);
-app.use("/api/chunks", chunkRoutes);
 
 export default app;

@@ -5,3 +5,8 @@ export interface CreateProjectInput {
   team: string[] | null;
   features: string[] | null;
 }
+
+export interface ProjectChunkData {
+  sectionType: string;
+  text: string;
+}
