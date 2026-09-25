@@ -7,8 +7,8 @@ export const splitProjectMarkdown = async (
   markdown: string,
 ): Promise<ProjectChunkData[]> => {
   const sections = markdown
-    .replace(/^#\s+.*\n/m, "")
-    .split(/^##\s+/m)
+    .replace(/^\s*#\s+.*\n/m, "")
+    .split(/^\s*##\s+/m)
     .filter(Boolean);
 
   const chunks: ProjectChunkData[] = [];
