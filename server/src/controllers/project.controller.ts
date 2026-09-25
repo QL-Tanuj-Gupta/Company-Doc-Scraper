@@ -26,6 +26,13 @@ export const addProject = async (req: Request, res: Response) => {
       });
     }
 
+    if (!overview || typeof overview !== "string" || !overview.trim()) {
+      return res.status(400).json({
+        success: false,
+        message: "Project overview is required",
+      });
+    }
+
     const project: CreateProjectInput = {
       projectName: projectName.trim(),
       overview,
