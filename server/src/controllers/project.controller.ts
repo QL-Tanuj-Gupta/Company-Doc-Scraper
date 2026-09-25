@@ -26,6 +26,13 @@ export const addProject = async (req: Request, res: Response) => {
       });
     }
 
+    if (projectName.trim().length > 100) {
+      return res.status(400).json({
+        success: false,
+        message: "Project name must be 100 characters or less",
+      });
+    }
+
     if (!overview || typeof overview !== "string" || !overview.trim()) {
       return res.status(400).json({
         success: false,
