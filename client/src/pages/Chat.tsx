@@ -126,7 +126,7 @@ const Chat = () => {
         </button>
       </div>
       {/* Chat messages */}
-      <main className="min-h-0 flex-1 overflow-y-auto px-6 py-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <main className="min-h-0 flex-1 overflow-y-auto px-6 py-8 scrollbar-none [&::-webkit-scrollbar]:hidden">
         <div className="mx-auto flex max-w-4xl flex-col gap-5">
           {/* Empty state */}
           {messages.length === 0 && (
