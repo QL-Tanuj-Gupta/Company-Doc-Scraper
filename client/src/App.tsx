@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AddProject from "./pages/AddProject";
 import Chat from "./pages/Chat";
@@ -7,11 +8,17 @@ import Chat from "./pages/Chat";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/add-project" element={<AddProject />} />
-        <Route path="/chat" element={<Chat />} />
-      </Routes>
+      <div className="flex h-screen flex-col overflow-hidden">
+        <Navbar />
+
+        <main className="min-h-0 flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/add-project" element={<AddProject />} />
+            <Route path="/chat" element={<Chat />} />
+          </Routes>
+        </main>
+      </div>
     </BrowserRouter>
   );
 }
