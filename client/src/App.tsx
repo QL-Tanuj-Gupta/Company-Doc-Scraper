@@ -11,7 +11,7 @@ function App() {
       <div className="flex h-screen flex-col overflow-hidden">
         <Navbar />
 
-        <main className="min-h-0 flex-1">
+        <main className="min-h-0 flex-1 overflow-y-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/add-project" element={<AddProject />} />
