@@ -8,5 +8,7 @@ const llm = new ChatGoogleGenerativeAI({
 export const generateAnswer = async (prompt: string) => {
   const response = await llm.invoke(prompt);
 
+  console.log("LLM response:", response.usage_metadata);
+
   return response.content;
 };
