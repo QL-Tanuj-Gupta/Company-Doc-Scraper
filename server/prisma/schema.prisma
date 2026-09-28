@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model ProjectChunk {
+  id          BigInt                     @id @default(autoincrement())
+  projectName String                     @map("project_name")
+  sectionType String                     @map("section_type")
+  text        String
+  embedding   Unsupported("vector(768)")
+
+  @@index([projectName], map: "idx_project_chunks_project_name")
+  @@map("project_chunks")
+}
+
+model ChatSession {
+  id        BigInt        @id @default(autoincrement())
+  sessionId String        @unique @map("session_id")
+  messages  ChatMessage[]
+  createdAt DateTime      @default(now()) @map("created_at")
+  updatedAt DateTime      @updatedAt @map("updated_at")
+
+  @@map("chat_sessions")
+}
+
+model ChatMessage {
+  id        BigInt   @id @default(autoincrement())
+  sessionId String   @map("session_id")
+  role      String
+  content   String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  session ChatSession @relation(fields: [sessionId], references: [sessionId], onDelete: Cascade)
+
+  @@index([sessionId])
+  @@map("chat_messages")
+}
