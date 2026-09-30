@@ -1,0 +1,311 @@
+{
+  "reportInfo": {
+    "title": "RAG Evaluation Report",
+    "generatedAt": "2026-09-30T12:08:30.663Z",
+    "format": "json"
+  },
+  "summary": {
+    "overallScore": 7.9515841456708545,
+    "totalQuestions": 13,
+    "evaluationDurationMs": 897015,
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "metricsUsed": [
+      "faithfulness",
+      "relevance",
+      "context_precision",
+      "context_recall",
+      "coherence"
+    ]
+  },
+  "metrics": {
+    "faithfulness": 10,
+    "relevance": 9.560484830918378,
+    "context_precision": 2.923076923076923,
+    "context_recall": 7.435897435897436,
+    "coherence": 9.838461538461537
+  },
+  "statistics": {
+    "mean": 7.9515841456708545,
+    "median": 8.328439777182682,
+    "stdDev": 1.0117808680864173,
+    "min": 5.795613561135773,
+    "max": 8.975510554700438,
+    "passedThresholdPercentage": 84.61538461538461
+  },
+  "perQuestion": [
+    {
+      "question": "What technologies are used in Project Navigator?",
+      "answer": "Based on the project context, the technologies used in Project Navigator are:\n\n- Node.js\n- TypeScript\n- OpenAI\n- PostgreSQL\n- Next.js\n- RAG (Retrieval-Augmented Generation)",
+      "expectedAnswer": "Project Navigator uses Node.js, TypeScript, OpenAI, PostgreSQL, Next.js, and RAG (Retrieval-Augmented Generation).",
+      "context": "[Project: Project Navigator | Section: Technologies] Technologies - Node.js - TypeScript - OpenAI - PostgreSQL - Next.js - RAG (Retrieval-Augmented Generation)\n[Project: Project Navigator | Section: Overview] Overview A multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot understands the host product, can navigate between pages, call the product's own APIs, and answer questions from a knowledge base — all on behalf of the end user.\n[Project: Project Navigator | Section: Features] Features - Any web product can integrate the chatbot in under 10 minutes - OpenAPI spec upload → tools auto-generated - no manual coding required - Knowledge base upload (PDFs - URLs - docs) → semantic search powered answers - Full conversation memory per user session - Site owners have complete control over what the agent can and cannot do - Multi-tenant: each site's data - tools - and conversations are fully isolated - Production-grade: secure - observable - scalable\n[Project: Project Navigator | Section: Team] Team - Himanshu Budhiraja - Prakhar Nigam - Dhruv Dhiman\n[Project: bbgg | Section: Technologies] Technologies - TypeScript - Node.js (ESM) - pnpm + Turborepo monorepo - Vercel AI SDK - Anthropic/OpenAI adapters - MCP SDK - Zod - React 19 - Next.js - Tailwind CSS - Recharts - Sandboxed iframe execution: QuickJS (WASM) - E2B - PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.64526445081352,
+        "context_precision": 4,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully grounded in the provided reference context. Every technology listed (Node.js, TypeScript, OpenAI, PostgreSQL, Next.js, and RAG) matches the exact list provided in the \"Technologies\" section for \"Project Navigator\". There are no hallucinations, unsupported claims, or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.1/10",
+        "context_precision": "2 of 5 context chunks relevant (40.0%)",
+        "context_recall": "All facts present in context (3/3)",
+        "coherence": "The text is exceptionally clear, concise, and logically organized. It directly introduces the context (\"Based on the project context, the technologies used in Project Navigator are:\") and presents the information in a clean, easily readable bulleted list. There are no contradictions, confusing phrasing, or flow issues, and the structure is ideal for presenting a technology stack."
+      },
+      "overallScore": 8.729052890162704
+    },
+    {
+      "question": "Who are the team members working on Project Navigator?",
+      "answer": "The team members working on Project Navigator are:\n\n- Himanshu Budhiraja\n- Prakhar Nigam\n- Dhruv Dhiman",
+      "expectedAnswer": "The team members working on Project Navigator are Himanshu Budhiraja, Prakhar Nigam, and Dhruv Dhiman.",
+      "context": "[Project: Project Navigator | Section: Team] Team - Himanshu Budhiraja - Prakhar Nigam - Dhruv Dhiman\n[Project: Project Navigator | Section: Overview] Overview A multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot understands the host product, can navigate between pages, call the product's own APIs, and answer questions from a knowledge base — all on behalf of the end user.\n[Project: Project Navigator | Section: Technologies] Technologies - Node.js - TypeScript - OpenAI - PostgreSQL - Next.js - RAG (Retrieval-Augmented Generation)\n[Project: Project Navigator | Section: Features] Features - Any web product can integrate the chatbot in under 10 minutes - OpenAPI spec upload → tools auto-generated - no manual coding required - Knowledge base upload (PDFs - URLs - docs) → semantic search powered answers - Full conversation memory per user session - Site owners have complete control over what the agent can and cannot do - Multi-tenant: each site's data - tools - and conversations are fully isolated - Production-grade: secure - observable - scalable\n[Project: Dynamic Software Interfaces | Section: Team] Team - Shivankul - Rohit - Nisha - Tanmay",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.721631187942835,
+        "context_precision": 2,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer correctly identifies the team members working on Project Navigator (Himanshu Budhiraja, Prakhar Nigam, and Dhruv Dhiman) based directly on the provided context. There are no hallucinations, unsupported claims, or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.3/10",
+        "context_precision": "1 of 5 context chunks relevant (20.0%)",
+        "context_recall": "All facts present in context (4/4)",
+        "coherence": "The text is exceptionally clear, direct, and well-organized. It uses a clean, bulleted list format that is entirely appropriate for presenting a team roster. There are no contradictions, the language is unambiguous, and the information is conveyed without unnecessary complexity or flow issues."
+      },
+      "overallScore": 8.344326237588566
+    },
+    {
+      "question": "What is Project Navigator and how can web products integrate with it?",
+      "answer": "Based on the provided information, **Project Navigator** is a multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot can understand the host product, navigate between pages, call the product's own APIs, and answer questions from a knowledge base on behalf of the end user.\n\nWeb products can integrate the chatbot in under 10 minutes.",
+      "expectedAnswer": "Project Navigator is a multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag in under 10 minutes. It auto-generates tools from OpenAPI specs and supports knowledge base semantic search.",
+      "context": "[Project: Project Navigator | Section: Overview] Overview A multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot understands the host product, can navigate between pages, call the product's own APIs, and answer questions from a knowledge base — all on behalf of the end user.\n[Project: Project Navigator | Section: Features] Features - Any web product can integrate the chatbot in under 10 minutes - OpenAPI spec upload → tools auto-generated - no manual coding required - Knowledge base upload (PDFs - URLs - docs) → semantic search powered answers - Full conversation memory per user session - Site owners have complete control over what the agent can and cannot do - Multi-tenant: each site's data - tools - and conversations are fully isolated - Production-grade: secure - observable - scalable\n[Project: Project Navigator | Section: Technologies] Technologies - Node.js - TypeScript - OpenAI - PostgreSQL - Next.js - RAG (Retrieval-Augmented Generation)\n[Project: Project Navigator | Section: Team] Team - Himanshu Budhiraja - Prakhar Nigam - Dhruv Dhiman\n[Project: Dynamic Software Interfaces | Section: Overview] Overview A customization layer you drop into your product so the UI can change itself for each individual user. **The problem it solves:** In B2B SaaS, every customer wants the product slightly differently. Normally that means your team building bespoke features forever. DynamicUi lets the user do it themselves — no code changes on your side. **How it works, in one line:** It's an embedded AI agent. The user asks for something in plain language (\"show my balances as a donut chart\", \"make this section green\", \"rename this heading\"), and the agent builds or modifies that piece of UI right there — using your product's own components and your own API, acting as the signed-in user. **Two important guarantees:** - Your source code is never touched — everything happens in a sandboxed layer on top - The agent can only do what the logged-in user is already allowed to do, since it goes through your own API — plus approvals and confirmations on anything destructive",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.542089053744931,
+        "context_precision": 4,
+        "context_recall": 7.5,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully faithful and grounded in the provided reference context. It accurately describes Project Navigator using the exact details from the \"Overview\" and \"Features\" sections (multi-tenant SaaS platform, embed via single script tag, AI-powered agentic chatbot, page navigation, API calls, knowledge base, and integration time under 10 minutes) without introducing any hallucinations or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 8.9/10",
+        "context_precision": "2 of 5 context chunks relevant (40.0%)",
+        "context_recall": "Missing 1 facts: The platform auto-generates tools from OpenAPI specifications.",
+        "coherence": "The text is exceptionally clear, concise, and logically organized. It immediately introduces the product (\"Project Navigator\") and defines its core value proposition (multi-tenant SaaS platform, AI-powered agentic chatbot, single script tag). It then details the chatbot's specific capabilities sequentially before concluding with a practical, high-value metric for the target audience (integration in under 10 minutes). There are no contradictions, the language is professional and accessible, and the ideas build progressively without any abrupt transitions."
+      },
+      "overallScore": 8.208417810748987
+    },
+    {
+      "question": "What key features does EverTest provide?",
+      "answer": "EverTest provides the following key features:\n\n- AI Test Generation\n- Self-Healing Locators\n- Visual Comparison\n- Cloud Execution\n- Test Scheduling\n- CI/CD\n- Detailed Reports\n- Role-Based Access Control\n- Project/Organization Management\n- Cross-Browser Testing\n- Screenshots\n- Network/API Failure Detection",
+      "expectedAnswer": "EverTest features include AI Test Generation, Self-Healing Locators, Visual Comparison, Cloud Execution, Test Scheduling, CI/CD integration, Detailed Reports, Role-Based Access Control, Project/Organization Management, Cross-Browser Testing, Screenshots, and Network/API Failure Detection.",
+      "context": "[Project: EverTest | Section: Features] Features - AI Test Generation - Self-Healing Locators - Visual Comparison - Cloud Execution - Test Scheduling - CI/CD - Detailed Reports - Role-Based Access Control - Project/Organization Management - Cross-Browser Testing - Screenshots - Network/API Failure Detection\n[Project: EverTest | Section: Overview] Overview EverTest is an AI-powered, no-code test automation platform for web applications. It enables teams to create, execute, and manage automated tests without writing complex automation scripts. It helps improve test coverage, reliability, and execution speed while reducing manual testing effort.\n[Project: EverTest | Section: Technologies] Technologies - React - Tailwind CSS - shadcn/ui - Node.js - Python\n[Project: EverTest | Section: Team] Team - Abhishek Bhati - Zeeshan Haider - Mohd Shaim Rafi - Ashish Chaursiya\n[Project: Project Navigator | Section: Features] Features - Any web product can integrate the chatbot in under 10 minutes - OpenAPI spec upload → tools auto-generated - no manual coding required - Knowledge base upload (PDFs - URLs - docs) → semantic search powered answers - Full conversation memory per user session - Site owners have complete control over what the agent can and cannot do - Multi-tenant: each site's data - tools - and conversations are fully isolated - Production-grade: secure - observable - scalable",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.63845259671313,
+        "context_precision": 4,
+        "context_recall": 10,
+        "coherence": 9.3
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully grounded in the provided reference context. Every single feature listed in the generated answer (AI Test Generation, Self-Healing Locators, Visual Comparison, Cloud Execution, Test Scheduling, CI/CD, Detailed Reports, Role-Based Access Control, Project/Organization Management, Cross-Browser Testing, Screenshots, Network/API Failure Detection) matches the exact list of features provided under the [Project: EverTest | Section: Features] context. There are no hallucinations or unsupported claims.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.1/10",
+        "context_precision": "2 of 5 context chunks relevant (40.0%)",
+        "context_recall": "All facts present in context (4/4)",
+        "coherence": "The text is exceptionally clear, highly organized, and utilizes a standard bulleted list format that is entirely appropriate for presenting software features. The language is precise and directly communicates the capabilities of the tool without any contradictions, internal inconsistencies, or confusing jargon. While it is a list rather than a prose paragraph (meaning narrative \"flow\" and progressive idea development are less applicable), the structure is optimal for readability and quick comprehension."
+      },
+      "overallScore": 8.587690519342626
+    },
+    {
+      "question": "Who is on the EverTest team?",
+      "answer": "The team members on the EverTest project are:\n\n- Abhishek Bhati\n- Zeeshan Haider\n- Mohd Shaim Rafi\n- Ashish Chaursiya",
+      "expectedAnswer": "The EverTest team consists of Abhishek Bhati, Zeeshan Haider, Mohd Shaim Rafi, and Ashish Chaursiya.",
+      "context": "[Project: EverTest | Section: Team] Team - Abhishek Bhati - Zeeshan Haider - Mohd Shaim Rafi - Ashish Chaursiya\n[Project: EverTest | Section: Overview] Overview EverTest is an AI-powered, no-code test automation platform for web applications. It enables teams to create, execute, and manage automated tests without writing complex automation scripts. It helps improve test coverage, reliability, and execution speed while reducing manual testing effort.\n[Project: EverTest | Section: Technologies] Technologies - React - Tailwind CSS - shadcn/ui - Node.js - Python\n[Project: EverTest | Section: Features] Features - AI Test Generation - Self-Healing Locators - Visual Comparison - Cloud Execution - Test Scheduling - CI/CD - Detailed Reports - Role-Based Access Control - Project/Organization Management - Cross-Browser Testing - Screenshots - Network/API Failure Detection\n[Project: Project Navigator | Section: Team] Team - Himanshu Budhiraja - Prakhar Nigam - Dhruv Dhiman",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.614049212774152,
+        "context_precision": 2,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully grounded in the provided context. Every team member listed (Abhishek Bhati, Zeeshan Haider, Mohd Shaim Rafi, and Ashish Chaursiya) is explicitly mentioned under the [Project: EverTest | Section: Team] context. There are no hallucinations, unsupported claims, or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.0/10",
+        "context_precision": "1 of 5 context chunks relevant (20.0%)",
+        "context_recall": "All facts present in context (4/4)",
+        "coherence": "The text is extremely clear, concise, and perfectly structured for its intended purpose (listing team members). It is logically organized with a direct introductory sentence followed by a clean bulleted list. There are no contradictions, confusing language, or flow issues."
+      },
+      "overallScore": 8.322809842554829
+    },
+    {
+      "question": "What tech stack is EverTest built with?",
+      "answer": "EverTest is built with the following technologies:\n\n- React\n- Tailwind CSS\n- shadcn/ui\n- Node.js\n- Python",
+      "expectedAnswer": "EverTest is built with React, Tailwind CSS, shadcn/ui, Node.js, and Python.",
+      "context": "[Project: EverTest | Section: Technologies] Technologies - React - Tailwind CSS - shadcn/ui - Node.js - Python\n[Project: EverTest | Section: Overview] Overview EverTest is an AI-powered, no-code test automation platform for web applications. It enables teams to create, execute, and manage automated tests without writing complex automation scripts. It helps improve test coverage, reliability, and execution speed while reducing manual testing effort.\n[Project: EverTest | Section: Features] Features - AI Test Generation - Self-Healing Locators - Visual Comparison - Cloud Execution - Test Scheduling - CI/CD - Detailed Reports - Role-Based Access Control - Project/Organization Management - Cross-Browser Testing - Screenshots - Network/API Failure Detection\n[Project: EverTest | Section: Team] Team - Abhishek Bhati - Zeeshan Haider - Mohd Shaim Rafi - Ashish Chaursiya\n[Project: Dynamic Software Interfaces | Section: Technologies] Technologies - TypeScript - Node.js (ESM) - pnpm + Turborepo monorepo - Vercel AI SDK - Anthropic/OpenAI adapters - MCP SDK - Zod - React 19 - Next.js - Tailwind CSS - Recharts - Sandboxed iframe execution: QuickJS (WASM) - E2B - PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.738141360170907,
+        "context_precision": 2,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully grounded in the provided context. Every technology listed (React, Tailwind CSS, shadcn/ui, Node.js, Python) matches the exact tech stack specified under the [Project: EverTest | Section: Technologies] section. There are no hallucinations, unsupported claims, or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.3/10",
+        "context_precision": "1 of 5 context chunks relevant (20.0%)",
+        "context_recall": "All facts present in context (4/4)",
+        "coherence": "The text is exceptionally clear, direct, and logically organized. It uses a standard, highly readable bulleted list to present the technological stack of \"EverTest,\" making the information instantly accessible. There are no contradictions, confusing transitions, or structural flaws. The format is perfectly suited for the technical content being communicated."
+      },
+      "overallScore": 8.347628272034182
+    },
+    {
+      "question": "What security guarantees does Dynamic Software Interfaces provide?",
+      "answer": "Based on the provided project context, Dynamic Software Interfaces provides the following security guarantees:\n\n- Your source code is never touched — everything happens in a sandboxed layer on top.\n- The agent can only do what the logged-in user is already allowed to do, since it goes through your own API, along with approvals and confirmations on anything destructive.",
+      "expectedAnswer": "Dynamic Software Interfaces guarantees that source code is never touched (execution occurs in a sandboxed layer on top) and that the agent can only perform actions that the logged-in user is already authorized to do through the product's own API, with approvals and confirmations for destructive actions.",
+      "context": "[Project: Dynamic Software Interfaces | Section: Overview] Overview A customization layer you drop into your product so the UI can change itself for each individual user. **The problem it solves:** In B2B SaaS, every customer wants the product slightly differently. Normally that means your team building bespoke features forever. DynamicUi lets the user do it themselves — no code changes on your side. **How it works, in one line:** It's an embedded AI agent. The user asks for something in plain language (\"show my balances as a donut chart\", \"make this section green\", \"rename this heading\"), and the agent builds or modifies that piece of UI right there — using your product's own components and your own API, acting as the signed-in user. **Two important guarantees:** - Your source code is never touched — everything happens in a sandboxed layer on top - The agent can only do what the logged-in user is already allowed to do, since it goes through your own API — plus approvals and confirmations on anything destructive\n[Project: Dynamic Software Interfaces | Section: Technologies] Technologies - TypeScript - Node.js (ESM) - pnpm + Turborepo monorepo - Vercel AI SDK - Anthropic/OpenAI adapters - MCP SDK - Zod - React 19 - Next.js - Tailwind CSS - Recharts - Sandboxed iframe execution: QuickJS (WASM) - E2B - PGlite (local dev) / Postgres (production)\n[Project: Dynamic Software Interfaces | Section: Team] Team - Shivankul - Rohit - Nisha - Tanmay\n[Project: Dynamic Software Interfaces | Section: Features] Features - Personalized UI per user — each person's dashboard can look and behave differently - and their version is saved for them - Build new views on demand — the agent composes a live view from your existing data and components - Edit in place — hover any section - describe the change - apply it - Automations — describe a recurring task - it becomes a standing automation\n[Project: Project Navigator | Section: Features] Features - Any web product can integrate the chatbot in under 10 minutes - OpenAPI spec upload → tools auto-generated - no manual coding required - Knowledge base upload (PDFs - URLs - docs) → semantic search powered answers - Full conversation memory per user session - Site owners have complete control over what the agent can and cannot do - Multi-tenant: each site's data - tools - and conversations are fully isolated - Production-grade: secure - observable - scalable",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.716970251540216,
+        "context_precision": 4,
+        "context_recall": 2.5,
+        "coherence": 9.3
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully faithful and directly supported by the provided context. It accurately extracts the two security/architectural guarantees explicitly listed under the \"Overview\" section of the project context (\"Your source code is never touched\" and \"The agent can only do what the logged-in user is already allowed to do... plus approvals and confirmations on anything destructive\"). There are no hallucinations, unsupported claims, or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.3/10",
+        "context_precision": "2 of 5 context chunks relevant (40.0%)",
+        "context_recall": "Missing 3 facts: Code execution takes place within a sandboxed layer operating on top of the system., Agents are restricted to performing actions that the logged-in user is already authorized to execute via the product's API....",
+        "coherence": "The text is exceptionally clear, logically organized, and easy to follow. It uses a bulleted list format that is highly appropriate for outlining distinct security guarantees. The language is plain, understandable, and free of contradictions, moving directly from the protection of the source code to user-permission boundaries and approval safeguards. The flow is smooth and natural, though a minor tweak to punctuation or breaking the second bullet point into two could make it even punchier, but it easily falls into the top tier for clarity and coherence."
+      },
+      "overallScore": 7.103394050308043
+    },
+    {
+      "question": "What technologies are used in Dynamic Software Interfaces?",
+      "answer": "The technologies used in Dynamic Software Interfaces are:\n\n- TypeScript\n- Node.js (ESM)\n- pnpm + Turborepo monorepo\n- Vercel AI SDK\n- Anthropic/OpenAI adapters\n- MCP SDK\n- Zod\n- React 19\n- Next.js\n- Tailwind CSS\n- Recharts\n- Sandboxed iframe execution: QuickJS (WASM)\n- E2B\n- PGlite (local dev) / Postgres (production)",
+      "expectedAnswer": "Dynamic Software Interfaces uses TypeScript, Node.js (ESM), pnpm + Turborepo monorepo, Vercel AI SDK, Anthropic/OpenAI adapters, MCP SDK, Zod, React 19, Next.js, Tailwind CSS, Recharts, QuickJS (WASM) and E2B for sandboxed iframe execution, and PGlite / Postgres.",
+      "context": "[Project: Dynamic Software Interfaces | Section: Technologies] Technologies - TypeScript - Node.js (ESM) - pnpm + Turborepo monorepo - Vercel AI SDK - Anthropic/OpenAI adapters - MCP SDK - Zod - React 19 - Next.js - Tailwind CSS - Recharts - Sandboxed iframe execution: QuickJS (WASM) - E2B - PGlite (local dev) / Postgres (production)\n[Project: Dynamic Software Interfaces | Section: Features] Features - Personalized UI per user — each person's dashboard can look and behave differently - and their version is saved for them - Build new views on demand — the agent composes a live view from your existing data and components - Edit in place — hover any section - describe the change - apply it - Automations — describe a recurring task - it becomes a standing automation\n[Project: Dynamic Software Interfaces | Section: Overview] Overview A customization layer you drop into your product so the UI can change itself for each individual user. **The problem it solves:** In B2B SaaS, every customer wants the product slightly differently. Normally that means your team building bespoke features forever. DynamicUi lets the user do it themselves — no code changes on your side. **How it works, in one line:** It's an embedded AI agent. The user asks for something in plain language (\"show my balances as a donut chart\", \"make this section green\", \"rename this heading\"), and the agent builds or modifies that piece of UI right there — using your product's own components and your own API, acting as the signed-in user. **Two important guarantees:** - Your source code is never touched — everything happens in a sandboxed layer on top - The agent can only do what the logged-in user is already allowed to do, since it goes through your own API — plus approvals and confirmations on anything destructive\n[Project: Dynamic Software Interfaces | Section: Team] Team - Shivankul - Rohit - Nisha - Tanmay\n[Project: bbgg | Section: Technologies] Technologies - TypeScript - Node.js (ESM) - pnpm + Turborepo monorepo - Vercel AI SDK - Anthropic/OpenAI adapters - MCP SDK - Zod - React 19 - Next.js - Tailwind CSS - Recharts - Sandboxed iframe execution: QuickJS (WASM) - E2B - PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.577552773502191,
+        "context_precision": 6,
+        "context_recall": 10,
+        "coherence": 9.3
+      },
+      "explanations": {
+        "faithfulness": "The generated answer completely and accurately reflects the technologies listed under the \"Technologies\" section for \"Dynamic Software Interfaces\" in the reference context, with no hallucinations, contradictions, or unsupported claims.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 8.9/10",
+        "context_precision": "3 of 5 context chunks relevant (60.0%)",
+        "context_recall": "All facts present in context (5/5)",
+        "coherence": "The text is a straightforward technology stack list. It is logically organized, highly clear, and entirely free of contradictions or confusing language. While it lacks narrative flow, the bulleted list structure is the most appropriate and effective format for presenting a collection of technologies."
+      },
+      "overallScore": 8.975510554700438
+    },
+    {
+      "question": "What is Within Health and what problem does it solve?",
+      "answer": "Within Health is a radiology follow-up management platform. The problem it solves is ensuring that important findings and follow-up recommendations in radiology reports are not missed or delayed.",
+      "expectedAnswer": "Within Health is a radiology follow-up management platform that ensures important findings and follow-up recommendations in radiology reports are not missed or delayed. It uses AI and NLP to identify recommendations and automates communication with patients and referring physicians.",
+      "context": "[Project: Within Health | Section: Overview] Overview Within Health is a radiology follow-up management platform developed to help ensure that important findings and follow-up recommendations in radiology reports are not missed or delayed. The platform uses AI and Natural Language Processing (NLP) to identify follow-up recommendations from radiology reports and track them through their required follow-up period. It helps radiology practices manage these recommendations and automate communication with patients and referring physicians through reminders and outreach. The system provides visibility into the complete follow-up process from identifying a recommendation to tracking its status and confirming that the required action has been taken. By helping close this communication and care loop, the platform aims to support timely follow-up, early clinical action, and better patient outcomes.\n[Project: Within Health | Section: Technologies] Technologies - React - Python\n[Project: Within Health | Section: Team] Team - Aniket Nandwana - Shashank Saurav\n[Project: Within Health | Section: Features] Features - AI-Based Recommendation Detection – Identifies follow-up recommendations from radiology reports using AI and Natural Language Processing (NLP) - Follow-Up Tracking – Tracks recommendations from the time they are identified through completion or resolution - Patient & Physician Outreach – Automates reminders and communications to patients and referring physicians when follow-up is required - Follow-Up Queue – Provides a centralized view of recommendations categorized by statuses such as overdue - coming due - non-compliant - and adherent - Patient Details & Timeline – Displays patient information - recommendation history - communication activities - and follow-up events in a timeline - Multiple Communication Channels – Supports outreach through SMS - email - fax - phone calls - and print - Recommendation Status Management – Helps care teams monitor and update the status of follow-up recommendations - Search & Filtering – Enables users to quickly find patients and recommendations using details such as patient name - MRN - phone number - and accession number - Reporting & Visibility – Provides summary counts and dashboards to help teams monitor follow-up performance and outstanding recommendations - Closed-Loop Follow-Up – Ensures recommendations are actively tracked until the required follow-up action is completed\n[Project: Dynamic Software Interfaces | Section: Overview] Overview A customization layer you drop into your product so the UI can change itself for each individual user. **The problem it solves:** In B2B SaaS, every customer wants the product slightly differently. Normally that means your team building bespoke features forever. DynamicUi lets the user do it themselves — no code changes on your side. **How it works, in one line:** It's an embedded AI agent. The user asks for something in plain language (\"show my balances as a donut chart\", \"make this section green\", \"rename this heading\"), and the agent builds or modifies that piece of UI right there — using your product's own components and your own API, acting as the signed-in user. **Two important guarantees:** - Your source code is never touched — everything happens in a sandboxed layer on top - The agent can only do what the logged-in user is already allowed to do, since it goes through your own API — plus approvals and confirmations on anything destructive",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.640027272172478,
+        "context_precision": 4,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully grounded in the provided reference context. It accurately identifies Within Health as a \"radiology follow-up management platform\" and correctly states the problem it solves (\"ensuring that important findings and follow-up recommendations in radiology reports are not missed or delayed\"), which is taken verbatim/near-verbatim from the Overview section of the Within Health project. There are no contradictions or unsupported claims.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.1/10",
+        "context_precision": "2 of 5 context chunks relevant (40.0%)",
+        "context_recall": "All facts present in context (4/4)",
+        "coherence": "The text is exceptionally clear, concise, and logically organized. It immediately introduces the subject (\"Within Health is a radiology follow-up management platform\") and directly follows up with the exact problem it addresses. The language is plain and professional, there are no contradictions, and the ideas progress smoothly and naturally within its brief scope."
+      },
+      "overallScore": 8.728005454434495
+    },
+    {
+      "question": "Who is working on the Within Health project?",
+      "answer": "The team members working on the Within Health project are:\n\n- Aniket Nandwana\n- Shashank Saurav",
+      "expectedAnswer": "The Within Health team members are Aniket Nandwana and Shashank Saurav.",
+      "context": "[Project: Within Health | Section: Technologies] Technologies - React - Python\n[Project: Within Health | Section: Team] Team - Aniket Nandwana - Shashank Saurav\n[Project: Within Health | Section: Overview] Overview Within Health is a radiology follow-up management platform developed to help ensure that important findings and follow-up recommendations in radiology reports are not missed or delayed. The platform uses AI and Natural Language Processing (NLP) to identify follow-up recommendations from radiology reports and track them through their required follow-up period. It helps radiology practices manage these recommendations and automate communication with patients and referring physicians through reminders and outreach. The system provides visibility into the complete follow-up process from identifying a recommendation to tracking its status and confirming that the required action has been taken. By helping close this communication and care loop, the platform aims to support timely follow-up, early clinical action, and better patient outcomes.\n[Project: Within Health | Section: Features] Features - AI-Based Recommendation Detection – Identifies follow-up recommendations from radiology reports using AI and Natural Language Processing (NLP) - Follow-Up Tracking – Tracks recommendations from the time they are identified through completion or resolution - Patient & Physician Outreach – Automates reminders and communications to patients and referring physicians when follow-up is required - Follow-Up Queue – Provides a centralized view of recommendations categorized by statuses such as overdue - coming due - non-compliant - and adherent - Patient Details & Timeline – Displays patient information - recommendation history - communication activities - and follow-up events in a timeline - Multiple Communication Channels – Supports outreach through SMS - email - fax - phone calls - and print - Recommendation Status Management – Helps care teams monitor and update the status of follow-up recommendations - Search & Filtering – Enables users to quickly find patients and recommendations using details such as patient name - MRN - phone number - and accession number - Reporting & Visibility – Provides summary counts and dashboards to help teams monitor follow-up performance and outstanding recommendations - Closed-Loop Follow-Up – Ensures recommendations are actively tracked until the required follow-up action is completed\n[Project: Dynamic Software Interfaces | Section: Team] Team - Shivankul - Rohit - Nisha - Tanmay",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.642198885913407,
+        "context_precision": 2,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully grounded in the provided context. It correctly identifies Aniket Nandwana and Shashank Saurav as the team members working on the Within Health project, which matches the information explicitly stated under the \"[Project: Within Health | Section: Team]\" section of the context. There are no hallucinations, unsupported claims, or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.1/10",
+        "context_precision": "1 of 5 context chunks relevant (20.0%)",
+        "context_recall": "All facts present in context (2/2)",
+        "coherence": "The text is exceptionally clear, direct, and well-organized. It uses an appropriate bulleted structure to list the team members associated with the specified project, resulting in a smooth, unambiguous presentation of information with no contradictions or flow issues."
+      },
+      "overallScore": 8.328439777182682
+    },
+    {
+      "question": "What communication channels does Within Health support for patient and physician outreach?",
+      "answer": "Within Health supports outreach through the following communication channels:\n\n* SMS\n* Email\n* Fax\n* Phone calls\n* Print",
+      "expectedAnswer": "Within Health supports outreach through SMS, email, fax, phone calls, and print.",
+      "context": "[Project: Within Health | Section: Features] Features - AI-Based Recommendation Detection – Identifies follow-up recommendations from radiology reports using AI and Natural Language Processing (NLP) - Follow-Up Tracking – Tracks recommendations from the time they are identified through completion or resolution - Patient & Physician Outreach – Automates reminders and communications to patients and referring physicians when follow-up is required - Follow-Up Queue – Provides a centralized view of recommendations categorized by statuses such as overdue - coming due - non-compliant - and adherent - Patient Details & Timeline – Displays patient information - recommendation history - communication activities - and follow-up events in a timeline - Multiple Communication Channels – Supports outreach through SMS - email - fax - phone calls - and print - Recommendation Status Management – Helps care teams monitor and update the status of follow-up recommendations - Search & Filtering – Enables users to quickly find patients and recommendations using details such as patient name - MRN - phone number - and accession number - Reporting & Visibility – Provides summary counts and dashboards to help teams monitor follow-up performance and outstanding recommendations - Closed-Loop Follow-Up – Ensures recommendations are actively tracked until the required follow-up action is completed\n[Project: Within Health | Section: Overview] Overview Within Health is a radiology follow-up management platform developed to help ensure that important findings and follow-up recommendations in radiology reports are not missed or delayed. The platform uses AI and Natural Language Processing (NLP) to identify follow-up recommendations from radiology reports and track them through their required follow-up period. It helps radiology practices manage these recommendations and automate communication with patients and referring physicians through reminders and outreach. The system provides visibility into the complete follow-up process from identifying a recommendation to tracking its status and confirming that the required action has been taken. By helping close this communication and care loop, the platform aims to support timely follow-up, early clinical action, and better patient outcomes.\n[Project: Within Health | Section: Technologies] Technologies - React - Python\n[Project: Within Health | Section: Team] Team - Aniket Nandwana - Shashank Saurav\n[Project: bbgg | Section: Technologies] Technologies - TypeScript - Node.js (ESM) - pnpm + Turborepo monorepo - Vercel AI SDK - Anthropic/OpenAI adapters - MCP SDK - Zod - React 19 - Next.js - Tailwind CSS - Recharts - Sandboxed iframe execution: QuickJS (WASM) - E2B - PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.801320006642271,
+        "context_precision": 4,
+        "context_recall": 6.666666666666666,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully grounded in the provided context. The specific communication channels listed (SMS, email, fax, phone calls, and print) are explicitly mentioned under the \"Multiple Communication Channels\" feature in the Within Health project section. There are no hallucinations, unsupported claims, or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 9.5/10",
+        "context_precision": "2 of 5 context chunks relevant (40.0%)",
+        "context_recall": "Missing 1 facts: Outreach is also conducted via phone calls and print methods.",
+        "coherence": "The text is exceptionally clear, concise, and logically organized. It introduces a single, straightforward premise (\"Within Health supports outreach through the following communication channels:\") and immediately follows with a well-formatted bulleted list that directly answers the statement. There are no contradictions, confusing transitions, or ambiguous terms, making the information instantly accessible and easy to understand."
+      },
+      "overallScore": 8.093597334661787
+    },
+    {
+      "question": "Who is the lead mobile engineer on Project Apollo?",
+      "answer": "I don't have enough information to answer that.",
+      "expectedAnswer": "I don't have enough information to answer that.",
+      "context": "[Project: EverTest | Section: Team] Team - Abhishek Bhati - Zeeshan Haider - Mohd Shaim Rafi - Ashish Chaursiya\n[Project: Project Navigator | Section: Team] Team - Himanshu Budhiraja - Prakhar Nigam - Dhruv Dhiman\n[Project: Project Navigator | Section: Technologies] Technologies - Node.js - TypeScript - OpenAI - PostgreSQL - Next.js - RAG (Retrieval-Augmented Generation)\n[Project: Project Navigator | Section: Overview] Overview A multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot understands the host product, can navigate between pages, call the product's own APIs, and answer questions from a knowledge base — all on behalf of the end user.\n[Project: Test Project 11 | Section: Overview] Overview sjsdlaksndlaksndalns",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 9.030537944330032,
+        "context_precision": 0,
+        "context_recall": 0,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer correctly states that there is not enough information to answer the question. Looking at the provided context, there is no mention of \"Project Apollo\" or any lead mobile engineer. Therefore, the response is completely faithful, avoids hallucinations, and correctly identifies the absence of the requested information in the source text.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 7.6/10",
+        "context_precision": "0 of 5 context chunks relevant (0.0%)",
+        "context_recall": "Missing 2 facts: The speaker does not have enough information., The speaker is unable to answer the question.",
+        "coherence": "The text is a single, complete, and grammatically correct sentence. It is perfectly clear, unambiguous, and effectively communicates its intended meaning without any contradictions, structural issues, or confusion."
+      },
+      "overallScore": 5.8061075888660065
+    },
+    {
+      "question": "What SQL database engine does EverTest use for its data storage?",
+      "answer": "I don't have enough information to answer that.",
+      "expectedAnswer": "I don't have enough information to answer that.",
+      "context": "[Project: EverTest | Section: Technologies] Technologies - React - Tailwind CSS - shadcn/ui - Node.js - Python\n[Project: EverTest | Section: Overview] Overview EverTest is an AI-powered, no-code test automation platform for web applications. It enables teams to create, execute, and manage automated tests without writing complex automation scripts. It helps improve test coverage, reliability, and execution speed while reducing manual testing effort.\n[Project: EverTest | Section: Features] Features - AI Test Generation - Self-Healing Locators - Visual Comparison - Cloud Execution - Test Scheduling - CI/CD - Detailed Reports - Role-Based Access Control - Project/Organization Management - Cross-Browser Testing - Screenshots - Network/API Failure Detection\n[Project: EverTest | Section: Team] Team - Abhishek Bhati - Zeeshan Haider - Mohd Shaim Rafi - Ashish Chaursiya\n[Project: Dynamic Software Interfaces | Section: Technologies] Technologies - TypeScript - Node.js (ESM) - pnpm + Turborepo monorepo - Vercel AI SDK - Anthropic/OpenAI adapters - MCP SDK - Zod - React 19 - Next.js - Tailwind CSS - Recharts - Sandboxed iframe execution: QuickJS (WASM) - E2B - PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 8.978067805678865,
+        "context_precision": 0,
+        "context_recall": 0,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer correctly states that there is not enough information in the context to answer the question about EverTest's SQL database engine. The context lists EverTest's technologies (React, Tailwind CSS, shadcn/ui, Node.js, Python), but mentions Postgres/PGlite only under a different project (\"Dynamic Software Interfaces\"). Therefore, refusing to guess is the most faithful response possible.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 7.4/10",
+        "context_precision": "0 of 5 context chunks relevant (0.0%)",
+        "context_recall": "Missing 1 facts: The speaker lacks sufficient information to answer the question.",
+        "coherence": "The text is a single, complete, and grammatically correct sentence. It is perfectly clear, unambiguous, and effectively communicates the exact limitation it intends to convey without any confusion, contradictions, or structural issues."
+      },
+      "overallScore": 5.795613561135773
+    }
+  ]
+}

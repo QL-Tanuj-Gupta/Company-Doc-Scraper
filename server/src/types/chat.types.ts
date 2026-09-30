@@ -9,9 +9,12 @@ export interface ChatResponse {
   data?: {
     sessionId: string;
     answer: string;
+    contexts?: string[];
     sources?: {
       projectName: string;
       sectionType: string;
+      text?: string;
+      similarity?: number;
     }[];
   };
 }

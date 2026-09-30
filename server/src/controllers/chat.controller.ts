@@ -51,9 +51,11 @@ export const chat = async (req: Request, res: Response) => {
       data: {
         sessionId: session.sessionId,
         answer,
-        sources: chunks.map(({ projectName, sectionType, similarity }) => ({
+        contexts: chunks.map((c) => c.text),
+        sources: chunks.map(({ projectName, sectionType, text, similarity }) => ({
           projectName,
           sectionType,
+          text,
           similarity: Number(similarity.toFixed(3)),
         })),
       },

@@ -1,0 +1,93 @@
+question,answer,expected_answer,faithfulness,relevance,context_precision,context_recall,coherence,overall_score,faithfulness_explanation,relevance_explanation,context_precision_explanation,context_recall_explanation,coherence_explanation
+What technologies are used in Project Navigator?,"Based on the project context, the technologies used in Project Navigator are:
+
+- Node.js
+- TypeScript
+- OpenAI
+- PostgreSQL
+- Next.js
+- RAG (Retrieval-Augmented Generation)","Project Navigator uses Node.js, TypeScript, OpenAI, PostgreSQL, Next.js, and RAG (Retrieval-Augmented Generation).",10,9.64526445081352,4,10,10,8.729052890162704,"The generated answer is fully grounded in the provided reference context. Every technology listed (Node.js, TypeScript, OpenAI, PostgreSQL, Next.js, and RAG) matches the exact list provided in the ""Technologies"" section for ""Project Navigator"". There are no hallucinations, unsupported claims, or contradictions.","LLM relevance: 10.0/10, Semantic: 9.1/10",2 of 5 context chunks relevant (40.0%),All facts present in context (3/3),"The text is exceptionally clear, concise, and logically organized. It directly introduces the context (""Based on the project context, the technologies used in Project Navigator are:"") and presents the information in a clean, easily readable bulleted list. There are no contradictions, confusing phrasing, or flow issues, and the structure is ideal for presenting a technology stack."
+Who are the team members working on Project Navigator?,"The team members working on Project Navigator are:
+
+- Himanshu Budhiraja
+- Prakhar Nigam
+- Dhruv Dhiman","The team members working on Project Navigator are Himanshu Budhiraja, Prakhar Nigam, and Dhruv Dhiman.",10,9.721631187942835,2,10,10,8.344326237588566,"The generated answer correctly identifies the team members working on Project Navigator (Himanshu Budhiraja, Prakhar Nigam, and Dhruv Dhiman) based directly on the provided context. There are no hallucinations, unsupported claims, or contradictions.","LLM relevance: 10.0/10, Semantic: 9.3/10",1 of 5 context chunks relevant (20.0%),All facts present in context (4/4),"The text is exceptionally clear, direct, and well-organized. It uses a clean, bulleted list format that is entirely appropriate for presenting a team roster. There are no contradictions, the language is unambiguous, and the information is conveyed without unnecessary complexity or flow issues."
+What is Project Navigator and how can web products integrate with it?,"Based on the provided information, **Project Navigator** is a multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot can understand the host product, navigate between pages, call the product's own APIs, and answer questions from a knowledge base on behalf of the end user.
+
+Web products can integrate the chatbot in under 10 minutes.",Project Navigator is a multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag in under 10 minutes. It auto-generates tools from OpenAPI specs and supports knowledge base semantic search.,10,9.542089053744931,4,7.5,10,8.208417810748987,"The generated answer is fully faithful and grounded in the provided reference context. It accurately describes Project Navigator using the exact details from the ""Overview"" and ""Features"" sections (multi-tenant SaaS platform, embed via single script tag, AI-powered agentic chatbot, page navigation, API calls, knowledge base, and integration time under 10 minutes) without introducing any hallucinations or contradictions.","LLM relevance: 10.0/10, Semantic: 8.9/10",2 of 5 context chunks relevant (40.0%),Missing 1 facts: The platform auto-generates tools from OpenAPI specifications.,"The text is exceptionally clear, concise, and logically organized. It immediately introduces the product (""Project Navigator"") and defines its core value proposition (multi-tenant SaaS platform, AI-powered agentic chatbot, single script tag). It then details the chatbot's specific capabilities sequentially before concluding with a practical, high-value metric for the target audience (integration in under 10 minutes). There are no contradictions, the language is professional and accessible, and the ideas build progressively without any abrupt transitions."
+What key features does EverTest provide?,"EverTest provides the following key features:
+
+- AI Test Generation
+- Self-Healing Locators
+- Visual Comparison
+- Cloud Execution
+- Test Scheduling
+- CI/CD
+- Detailed Reports
+- Role-Based Access Control
+- Project/Organization Management
+- Cross-Browser Testing
+- Screenshots
+- Network/API Failure Detection","EverTest features include AI Test Generation, Self-Healing Locators, Visual Comparison, Cloud Execution, Test Scheduling, CI/CD integration, Detailed Reports, Role-Based Access Control, Project/Organization Management, Cross-Browser Testing, Screenshots, and Network/API Failure Detection.",10,9.63845259671313,4,10,9.3,8.587690519342626,"The generated answer is fully grounded in the provided reference context. Every single feature listed in the generated answer (AI Test Generation, Self-Healing Locators, Visual Comparison, Cloud Execution, Test Scheduling, CI/CD, Detailed Reports, Role-Based Access Control, Project/Organization Management, Cross-Browser Testing, Screenshots, Network/API Failure Detection) matches the exact list of features provided under the [Project: EverTest | Section: Features] context. There are no hallucinations or unsupported claims.","LLM relevance: 10.0/10, Semantic: 9.1/10",2 of 5 context chunks relevant (40.0%),All facts present in context (4/4),"The text is exceptionally clear, highly organized, and utilizes a standard bulleted list format that is entirely appropriate for presenting software features. The language is precise and directly communicates the capabilities of the tool without any contradictions, internal inconsistencies, or confusing jargon. While it is a list rather than a prose paragraph (meaning narrative ""flow"" and progressive idea development are less applicable), the structure is optimal for readability and quick comprehension."
+Who is on the EverTest team?,"The team members on the EverTest project are:
+
+- Abhishek Bhati
+- Zeeshan Haider
+- Mohd Shaim Rafi
+- Ashish Chaursiya","The EverTest team consists of Abhishek Bhati, Zeeshan Haider, Mohd Shaim Rafi, and Ashish Chaursiya.",10,9.614049212774152,2,10,10,8.322809842554829,"The generated answer is fully grounded in the provided context. Every team member listed (Abhishek Bhati, Zeeshan Haider, Mohd Shaim Rafi, and Ashish Chaursiya) is explicitly mentioned under the [Project: EverTest | Section: Team] context. There are no hallucinations, unsupported claims, or contradictions.","LLM relevance: 10.0/10, Semantic: 9.0/10",1 of 5 context chunks relevant (20.0%),All facts present in context (4/4),"The text is extremely clear, concise, and perfectly structured for its intended purpose (listing team members). It is logically organized with a direct introductory sentence followed by a clean bulleted list. There are no contradictions, confusing language, or flow issues."
+What tech stack is EverTest built with?,"EverTest is built with the following technologies:
+
+- React
+- Tailwind CSS
+- shadcn/ui
+- Node.js
+- Python","EverTest is built with React, Tailwind CSS, shadcn/ui, Node.js, and Python.",10,9.738141360170907,2,10,10,8.347628272034182,"The generated answer is fully grounded in the provided context. Every technology listed (React, Tailwind CSS, shadcn/ui, Node.js, Python) matches the exact tech stack specified under the [Project: EverTest | Section: Technologies] section. There are no hallucinations, unsupported claims, or contradictions.","LLM relevance: 10.0/10, Semantic: 9.3/10",1 of 5 context chunks relevant (20.0%),All facts present in context (4/4),"The text is exceptionally clear, direct, and logically organized. It uses a standard, highly readable bulleted list to present the technological stack of ""EverTest,"" making the information instantly accessible. There are no contradictions, confusing transitions, or structural flaws. The format is perfectly suited for the technical content being communicated."
+What security guarantees does Dynamic Software Interfaces provide?,"Based on the provided project context, Dynamic Software Interfaces provides the following security guarantees:
+
+- Your source code is never touched — everything happens in a sandboxed layer on top.
+- The agent can only do what the logged-in user is already allowed to do, since it goes through your own API, along with approvals and confirmations on anything destructive.","Dynamic Software Interfaces guarantees that source code is never touched (execution occurs in a sandboxed layer on top) and that the agent can only perform actions that the logged-in user is already authorized to do through the product's own API, with approvals and confirmations for destructive actions.",10,9.716970251540216,4,2.5,9.3,7.103394050308043,"The generated answer is fully faithful and directly supported by the provided context. It accurately extracts the two security/architectural guarantees explicitly listed under the ""Overview"" section of the project context (""Your source code is never touched"" and ""The agent can only do what the logged-in user is already allowed to do... plus approvals and confirmations on anything destructive""). There are no hallucinations, unsupported claims, or contradictions.","LLM relevance: 10.0/10, Semantic: 9.3/10",2 of 5 context chunks relevant (40.0%),"Missing 3 facts: Code execution takes place within a sandboxed layer operating on top of the system., Agents are restricted to performing actions that the logged-in user is already authorized to execute via the product's API....","The text is exceptionally clear, logically organized, and easy to follow. It uses a bulleted list format that is highly appropriate for outlining distinct security guarantees. The language is plain, understandable, and free of contradictions, moving directly from the protection of the source code to user-permission boundaries and approval safeguards. The flow is smooth and natural, though a minor tweak to punctuation or breaking the second bullet point into two could make it even punchier, but it easily falls into the top tier for clarity and coherence."
+What technologies are used in Dynamic Software Interfaces?,"The technologies used in Dynamic Software Interfaces are:
+
+- TypeScript
+- Node.js (ESM)
+- pnpm + Turborepo monorepo
+- Vercel AI SDK
+- Anthropic/OpenAI adapters
+- MCP SDK
+- Zod
+- React 19
+- Next.js
+- Tailwind CSS
+- Recharts
+- Sandboxed iframe execution: QuickJS (WASM)
+- E2B
+- PGlite (local dev) / Postgres (production)","Dynamic Software Interfaces uses TypeScript, Node.js (ESM), pnpm + Turborepo monorepo, Vercel AI SDK, Anthropic/OpenAI adapters, MCP SDK, Zod, React 19, Next.js, Tailwind CSS, Recharts, QuickJS (WASM) and E2B for sandboxed iframe execution, and PGlite / Postgres.",10,9.577552773502191,6,10,9.3,8.975510554700438,"The generated answer completely and accurately reflects the technologies listed under the ""Technologies"" section for ""Dynamic Software Interfaces"" in the reference context, with no hallucinations, contradictions, or unsupported claims.","LLM relevance: 10.0/10, Semantic: 8.9/10",3 of 5 context chunks relevant (60.0%),All facts present in context (5/5),"The text is a straightforward technology stack list. It is logically organized, highly clear, and entirely free of contradictions or confusing language. While it lacks narrative flow, the bulleted list structure is the most appropriate and effective format for presenting a collection of technologies."
+What is Within Health and what problem does it solve?,Within Health is a radiology follow-up management platform. The problem it solves is ensuring that important findings and follow-up recommendations in radiology reports are not missed or delayed.,Within Health is a radiology follow-up management platform that ensures important findings and follow-up recommendations in radiology reports are not missed or delayed. It uses AI and NLP to identify recommendations and automates communication with patients and referring physicians.,10,9.640027272172478,4,10,10,8.728005454434495,"The generated answer is fully grounded in the provided reference context. It accurately identifies Within Health as a ""radiology follow-up management platform"" and correctly states the problem it solves (""ensuring that important findings and follow-up recommendations in radiology reports are not missed or delayed""), which is taken verbatim/near-verbatim from the Overview section of the Within Health project. There are no contradictions or unsupported claims.","LLM relevance: 10.0/10, Semantic: 9.1/10",2 of 5 context chunks relevant (40.0%),All facts present in context (4/4),"The text is exceptionally clear, concise, and logically organized. It immediately introduces the subject (""Within Health is a radiology follow-up management platform"") and directly follows up with the exact problem it addresses. The language is plain and professional, there are no contradictions, and the ideas progress smoothly and naturally within its brief scope."
+Who is working on the Within Health project?,"The team members working on the Within Health project are:
+
+- Aniket Nandwana
+- Shashank Saurav",The Within Health team members are Aniket Nandwana and Shashank Saurav.,10,9.642198885913407,2,10,10,8.328439777182682,"The generated answer is fully grounded in the provided context. It correctly identifies Aniket Nandwana and Shashank Saurav as the team members working on the Within Health project, which matches the information explicitly stated under the ""[Project: Within Health | Section: Team]"" section of the context. There are no hallucinations, unsupported claims, or contradictions.","LLM relevance: 10.0/10, Semantic: 9.1/10",1 of 5 context chunks relevant (20.0%),All facts present in context (2/2),"The text is exceptionally clear, direct, and well-organized. It uses an appropriate bulleted structure to list the team members associated with the specified project, resulting in a smooth, unambiguous presentation of information with no contradictions or flow issues."
+What communication channels does Within Health support for patient and physician outreach?,"Within Health supports outreach through the following communication channels:
+
+* SMS
+* Email
+* Fax
+* Phone calls
+* Print","Within Health supports outreach through SMS, email, fax, phone calls, and print.",10,9.801320006642271,4,6.666666666666666,10,8.093597334661787,"The generated answer is fully grounded in the provided context. The specific communication channels listed (SMS, email, fax, phone calls, and print) are explicitly mentioned under the ""Multiple Communication Channels"" feature in the Within Health project section. There are no hallucinations, unsupported claims, or contradictions.","LLM relevance: 10.0/10, Semantic: 9.5/10",2 of 5 context chunks relevant (40.0%),Missing 1 facts: Outreach is also conducted via phone calls and print methods.,"The text is exceptionally clear, concise, and logically organized. It introduces a single, straightforward premise (""Within Health supports outreach through the following communication channels:"") and immediately follows with a well-formatted bulleted list that directly answers the statement. There are no contradictions, confusing transitions, or ambiguous terms, making the information instantly accessible and easy to understand."
+Who is the lead mobile engineer on Project Apollo?,I don't have enough information to answer that.,I don't have enough information to answer that.,10,9.030537944330032,0,0,10,5.8061075888660065,"The generated answer correctly states that there is not enough information to answer the question. Looking at the provided context, there is no mention of ""Project Apollo"" or any lead mobile engineer. Therefore, the response is completely faithful, avoids hallucinations, and correctly identifies the absence of the requested information in the source text.","LLM relevance: 10.0/10, Semantic: 7.6/10",0 of 5 context chunks relevant (0.0%),"Missing 2 facts: The speaker does not have enough information., The speaker is unable to answer the question.","The text is a single, complete, and grammatically correct sentence. It is perfectly clear, unambiguous, and effectively communicates its intended meaning without any contradictions, structural issues, or confusion."
+What SQL database engine does EverTest use for its data storage?,I don't have enough information to answer that.,I don't have enough information to answer that.,10,8.978067805678865,0,0,10,5.795613561135773,"The generated answer correctly states that there is not enough information in the context to answer the question about EverTest's SQL database engine. The context lists EverTest's technologies (React, Tailwind CSS, shadcn/ui, Node.js, Python), but mentions Postgres/PGlite only under a different project (""Dynamic Software Interfaces""). Therefore, refusing to guess is the most faithful response possible.","LLM relevance: 10.0/10, Semantic: 7.4/10",0 of 5 context chunks relevant (0.0%),Missing 1 facts: The speaker lacks sufficient information to answer the question.,"The text is a single, complete, and grammatically correct sentence. It is perfectly clear, unambiguous, and effectively communicates the exact limitation it intends to convey without any confusion, contradictions, or structural issues."
+
+# Summary
+Overall Score,7.9515841456708545
+Total Questions,13
+Duration (ms),897015
+Provider,gemini
+Model,gemini-3.5-flash-lite
+
+# Statistics
+Mean,7.9515841456708545
+Median,8.328439777182682
+Std Dev,1.0117808680864173
+Min,5.795613561135773
+Max,8.975510554700438
+Passed (%),84.61538461538461
