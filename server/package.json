@@ -13,13 +13,17 @@
     "@langchain/core": "^1.2.12",
     "@langchain/google-genai": "^2.3.2",
     "@langchain/textsplitters": "^1.0.1",
+    "@llamaindex/google": "^0.4.0",
+    "@llamaindex/postgres": "^0.0.65",
     "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "^7.10.0",
     "cors": "^2.8.6",
     "dotenv": "^18.0.3",
     "express": "^5.2.1",
     "langchain": "^1.5.12",
+    "llamaindex": "^0.12.1",
     "pg": "^8.23.0",
+    "pgvector": "^0.2.0",
     "prisma": "^7.10.0"
   },
   "devDependencies": {
