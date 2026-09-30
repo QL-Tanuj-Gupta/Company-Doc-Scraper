@@ -5,73 +5,63 @@ import {
   getOrCreateSession,
   getSessionMessages,
   saveMessage,
-  searchRelevantChunks,
 } from "../services/chat.service";
-
+import { condenseQuestion, retrieveChunks } from "../services/rag.service";
 import { buildChatPrompt } from "../services/prompt.service";
-
 import { generateAnswer } from "../services/llm.service";
 
 export const chat = async (req: Request, res: Response) => {
   try {
-    const { sessionId, question }: ChatRequest = req.body;
+    const { sessionId, question } = req.body as ChatRequest;
 
-    // validate question
-    if (!question || typeof question !== "string" || !question.trim()) {
-      return res.status(400).json({
-        success: false,
-        message: "Question is required.",
-      });
+    if (typeof question !== "string" || !question.trim()) {
+      return res
+        .status(400)
+        .json({ success: false, message: "Question is required." });
     }
 
     const cleanQuestion = question.trim();
-
     const session = await getOrCreateSession(sessionId);
 
-    const messages = await getSessionMessages(session.sessionId);
-
+    // Load history first, so the new question isn't counted twice.
+    const previous = await getSessionMessages(session.sessionId);
     await saveMessage(session.sessionId, "user", cleanQuestion);
 
-    const chunks = await searchRelevantChunks(cleanQuestion);
+    const history = previous.map((m) => `${m.role}: ${m.content}`).join("\n");
 
-    const history = messages
-      .map((message) => {
-        return `${message.role}: ${message.content}`;
-      })
-      .join("\n");
+    // 1) rewrite follow-ups  2) retrieve chunks  3) generate the answer
+    const searchQuestion = await condenseQuestion(history, cleanQuestion);
+    const chunks = await retrieveChunks(searchQuestion);
 
     const context = chunks
       .map(
-        (chunk) => `Project: ${chunk.project_name}
-    Section: ${chunk.section_type}
-    Content: ${chunk.text}`,
+        (c) =>
+          `Project: ${c.projectName}\nSection: ${c.sectionType}\nContent: ${c.text}`,
       )
       .join("\n\n");
 
-    const prompt = buildChatPrompt(cleanQuestion, context, history);
-
-    const answer = await generateAnswer(prompt);
-
-    await saveMessage(session.sessionId, "assistant", String(answer));
+    const answer = String(
+      await generateAnswer(buildChatPrompt(cleanQuestion, context, history)),
+    );
+    await saveMessage(session.sessionId, "assistant", answer);
 
     return res.status(200).json({
       success: true,
       message: "Answer generated successfully.",
       data: {
         sessionId: session.sessionId,
-        answer: String(answer),
-        sources: chunks.map((chunk) => ({
-          projectName: chunk.project_name,
-          sectionType: chunk.section_type,
+        answer,
+        sources: chunks.map(({ projectName, sectionType, similarity }) => ({
+          projectName,
+          sectionType,
+          similarity: Number(similarity.toFixed(3)),
         })),
       },
     });
   } catch (error) {
     console.error("Chat error:", error);
-
-    return res.status(500).json({
-      success: false,
-      message: "Failed to process question",
-    });
+    return res
+      .status(500)
+      .json({ success: false, message: "Failed to process question" });
   }
 };

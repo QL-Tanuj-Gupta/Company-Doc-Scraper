@@ -1,76 +1,31 @@
 import crypto from "crypto";
 import prisma from "../config/db";
-import { generateEmbedding } from "./embedding.service";
-import { RelevantChunk } from "../types/chat.types";
 
-export const searchRelevantChunks = async (question: string) => {
-  // Generate embeddings for users question
-  const embedding = await generateEmbedding(question);
-
-  // Convert embedding into vector format
-  const vector = `[${embedding.join(",")}]`;
-
-  // similar chunks findig
-  const chunks = await prisma.$queryRaw<RelevantChunk[]>`
-    SELECT
-      id::integer AS id,
-      project_name,
-      section_type,
-      text,
-      1 - (embedding <=> ${vector}::vector) AS similarity
-    FROM project_chunks
-    ORDER BY embedding <=> ${vector}::vector
-    LIMIT 5
-  `;
-
-  return chunks;
-};
-
+// Reuse the session if it exists, otherwise start a new one.
 export const getOrCreateSession = async (sessionId?: string) => {
-  // if sessionId was provided, try to find that session
-  if (sessionId) {
-    const existingSession = await prisma.chatSession.findUnique({
-      where: {
-        sessionId,
-      },
-    });
+  const existing = sessionId
+    ? await prisma.chatSession.findUnique({ where: { sessionId } })
+    : null;
 
-    if (existingSession) {
-      return existingSession;
-    }
-  }
-
-  const newSession = await prisma.chatSession.create({
-    data: {
-      sessionId: crypto.randomUUID(),
-    },
-  });
-  return newSession;
+  return (
+    existing ??
+    prisma.chatSession.create({ data: { sessionId: crypto.randomUUID() } })
+  );
 };
 
-export const saveMessage = async (
+export const saveMessage = (
   sessionId: string,
   role: "user" | "assistant",
   content: string,
-) => {
-  const message = await prisma.chatMessage.create({
-    data: {
-      sessionId,
-      role,
-      content,
-    },
-  });
-  return message;
-};
+) => prisma.chatMessage.create({ data: { sessionId, role, content } });
 
-export const getSessionMessages = async (sessionId: string) => {
-  const messages = await prisma.chatMessage.findMany({
-    where: {
-      sessionId,
-    },
-    orderBy: {
-      createdAt: "asc",
-    },
+// Only the last few messages (oldest first) keep the prompt small and focused.
+export const getSessionMessages = async (sessionId: string, limit = 6) => {
+  const latest = await prisma.chatMessage.findMany({
+    where: { sessionId },
+    orderBy: { createdAt: "desc" },
+    take: limit,
   });
-  return messages;
+
+  return latest.reverse();
 };
