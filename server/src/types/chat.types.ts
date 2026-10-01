@@ -17,9 +17,8 @@ export interface ChatResponse {
 }
 
 export interface RelevantChunk {
-  id: number;
-  project_name: string;
-  section_type: string;
+  projectName: string;
+  sectionType: string;
   text: string;
   similarity: number;
 }

@@ -5,51 +5,50 @@ import {
   getOrCreateSession,
   getSessionMessages,
   saveMessage,
-  searchRelevantChunks,
 } from "../services/chat.service";
 
 import { buildChatPrompt } from "../services/prompt.service";
-
 import { generateAnswer } from "../services/llm.service";
+import { condenceQuestion, retrieveChunks } from "../services/rag.service";
 
 export const chat = async (req: Request, res: Response) => {
   try {
-    const { sessionId, question }: ChatRequest = req.body;
+    const { sessionId, question } = req.body as ChatRequest;
 
     // validate question
-    if (!question || typeof question !== "string" || !question.trim()) {
-      return res.status(400).json({
-        success: false,
-        message: "Question is required.",
-      });
+    if (typeof question !== "string" || !question.trim()) {
+      return res.status(400).json({ message: "Question is required." });
     }
 
     const cleanQuestion = question.trim();
 
     const session = await getOrCreateSession(sessionId);
 
-    const messages = await getSessionMessages(session.sessionId);
-
+    // loading history to prevent new question duplication
+    const previousMessages = await getSessionMessages(session.sessionId);
     await saveMessage(session.sessionId, "user", cleanQuestion);
 
-    const chunks = await searchRelevantChunks(cleanQuestion);
-
-    const history = messages
+    const history = previousMessages
       .map((message) => {
         return `${message.role}: ${message.content}`;
       })
       .join("\n");
 
+    // rewrite followup question
+    const searchQuestion = await condenceQuestion(history, cleanQuestion);
+
+    // retrievechunks
+    const chunks = await retrieveChunks(searchQuestion);
+
     const context = chunks
       .map(
-        (chunk) => `Project: ${chunk.project_name}
-    Section: ${chunk.section_type}
-    Content: ${chunk.text}`,
+        (chunk) =>
+          `Project: ${chunk.projectName}\nSection: ${chunk.sectionType}\nContent: ${chunk.text}`,
       )
       .join("\n\n");
 
+    // generate answer
     const prompt = buildChatPrompt(cleanQuestion, context, history);
-
     const answer = await generateAnswer(prompt);
 
     await saveMessage(session.sessionId, "assistant", String(answer));
@@ -59,10 +58,11 @@ export const chat = async (req: Request, res: Response) => {
       message: "Answer generated successfully.",
       data: {
         sessionId: session.sessionId,
-        answer: String(answer),
-        sources: chunks.map((chunk) => ({
-          projectName: chunk.project_name,
-          sectionType: chunk.section_type,
+        answer,
+        sources: chunks.map(({ projectName, sectionType, similarity }) => ({
+          projectName,
+          sectionType,
+          similarity: Number(similarity.toFixed(3)),
         })),
       },
     });
