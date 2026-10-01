@@ -1,0 +1,93 @@
+[
+  {
+    "id": "pn-tech",
+    "project": "Project Navigator",
+    "question": "What technologies are used in Project Navigator?",
+    "ground_truth": "Project Navigator uses Node.js, TypeScript, OpenAI, PostgreSQL, Next.js, and RAG (Retrieval-Augmented Generation).",
+    "category": "technologies"
+  },
+  {
+    "id": "pn-team",
+    "project": "Project Navigator",
+    "question": "Who are the team members working on Project Navigator?",
+    "ground_truth": "The team members working on Project Navigator are Himanshu Budhiraja, Prakhar Nigam, and Dhruv Dhiman.",
+    "category": "team"
+  },
+  {
+    "id": "pn-overview",
+    "project": "Project Navigator",
+    "question": "What is Project Navigator and how can web products integrate with it?",
+    "ground_truth": "Project Navigator is a multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag in under 10 minutes. It auto-generates tools from OpenAPI specs and supports knowledge base semantic search.",
+    "category": "overview"
+  },
+  {
+    "id": "et-features",
+    "project": "EverTest",
+    "question": "What key features does EverTest provide?",
+    "ground_truth": "EverTest features include AI Test Generation, Self-Healing Locators, Visual Comparison, Cloud Execution, Test Scheduling, CI/CD integration, Detailed Reports, Role-Based Access Control, Project/Organization Management, Cross-Browser Testing, Screenshots, and Network/API Failure Detection.",
+    "category": "features"
+  },
+  {
+    "id": "et-team",
+    "project": "EverTest",
+    "question": "Who is on the EverTest team?",
+    "ground_truth": "The EverTest team consists of Abhishek Bhati, Zeeshan Haider, Mohd Shaim Rafi, and Ashish Chaursiya.",
+    "category": "team"
+  },
+  {
+    "id": "et-tech",
+    "project": "EverTest",
+    "question": "What tech stack is EverTest built with?",
+    "ground_truth": "EverTest is built with React, Tailwind CSS, shadcn/ui, Node.js, and Python.",
+    "category": "technologies"
+  },
+  {
+    "id": "dsi-security",
+    "project": "Dynamic Software Interfaces",
+    "question": "What security guarantees does Dynamic Software Interfaces provide?",
+    "ground_truth": "Dynamic Software Interfaces guarantees that source code is never touched (execution occurs in a sandboxed layer on top) and that the agent can only perform actions that the logged-in user is already authorized to do through the product's own API, with approvals and confirmations for destructive actions.",
+    "category": "security_and_overview"
+  },
+  {
+    "id": "dsi-tech",
+    "project": "Dynamic Software Interfaces",
+    "question": "What technologies are used in Dynamic Software Interfaces?",
+    "ground_truth": "Dynamic Software Interfaces uses TypeScript, Node.js (ESM), pnpm + Turborepo monorepo, Vercel AI SDK, Anthropic/OpenAI adapters, MCP SDK, Zod, React 19, Next.js, Tailwind CSS, Recharts, QuickJS (WASM) and E2B for sandboxed iframe execution, and PGlite / Postgres.",
+    "category": "technologies"
+  },
+  {
+    "id": "wh-overview",
+    "project": "Within Health",
+    "question": "What is Within Health and what problem does it solve?",
+    "ground_truth": "Within Health is a radiology follow-up management platform that ensures important findings and follow-up recommendations in radiology reports are not missed or delayed. It uses AI and NLP to identify recommendations and automates communication with patients and referring physicians.",
+    "category": "overview"
+  },
+  {
+    "id": "wh-team",
+    "project": "Within Health",
+    "question": "Who is working on the Within Health project?",
+    "ground_truth": "The Within Health team members are Aniket Nandwana and Shashank Saurav.",
+    "category": "team"
+  },
+  {
+    "id": "wh-channels",
+    "project": "Within Health",
+    "question": "What communication channels does Within Health support for patient and physician outreach?",
+    "ground_truth": "Within Health supports outreach through SMS, email, fax, phone calls, and print.",
+    "category": "features"
+  },
+  {
+    "id": "neg-apollo",
+    "project": "Unknown",
+    "question": "Who is the lead mobile engineer on Project Apollo?",
+    "ground_truth": "I don't have enough information to answer that.",
+    "category": "negative_test"
+  },
+  {
+    "id": "neg-db",
+    "project": "EverTest",
+    "question": "What SQL database engine does EverTest use for its data storage?",
+    "ground_truth": "I don't have enough information to answer that.",
+    "category": "negative_test"
+  }
+]

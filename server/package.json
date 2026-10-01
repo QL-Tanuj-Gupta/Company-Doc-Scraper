@@ -7,9 +7,11 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
+    "eval": "tsx src/evaluation/evaluate.ts",
     "postinstall": "prisma skills sync || exit 0"
   },
   "dependencies": {
+    "@ikrigel/ragas-lib-typescript": "^0.1.2",
     "@langchain/core": "^1.2.12",
     "@langchain/google-genai": "^2.3.2",
     "@llamaindex/postgres": "^0.0.65",

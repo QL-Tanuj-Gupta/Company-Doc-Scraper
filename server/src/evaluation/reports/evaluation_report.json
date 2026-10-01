@@ -1,0 +1,311 @@
+{
+  "reportInfo": {
+    "title": "RAG Evaluation Report",
+    "generatedAt": "2026-10-01T18:05:10.056Z",
+    "format": "json"
+  },
+  "summary": {
+    "overallScore": 6.354871794871795,
+    "totalQuestions": 13,
+    "evaluationDurationMs": 164442,
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "metricsUsed": [
+      "faithfulness",
+      "relevance",
+      "context_precision",
+      "context_recall",
+      "coherence"
+    ]
+  },
+  "metrics": {
+    "faithfulness": 1,
+    "relevance": 5.6461538461538465,
+    "context_precision": 8.35897435897436,
+    "context_recall": 6.769230769230769,
+    "coherence": 10
+  },
+  "statistics": {
+    "mean": 6.354871794871794,
+    "median": 7,
+    "stdDev": 0.8674716334529312,
+    "min": 5,
+    "max": 7.2666666666666675,
+    "passedThresholdPercentage": 53.84615384615385
+  },
+  "perQuestion": [
+    {
+      "question": "What technologies are used in Project Navigator?",
+      "answer": "I don't have enough information to answer that. The provided project context does not contain information about a project named \"Project Navigator.\"",
+      "expectedAnswer": "Project Navigator uses Node.js, TypeScript, OpenAI, PostgreSQL, Next.js, and RAG (Retrieval-Augmented Generation).",
+      "context": "Technologies\n\n- Node.js\n- TypeScript\n- OpenAI\n- PostgreSQL\n- Next.js\n- RAG (Retrieval-Augmented Generation)\nOverview\n\nA multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot understands the host product, can navigate between pages, call the product's own APIs, and answer questions from a knowledge base — all on behalf of the end user.\nFeatures\n\n- Any web product can integrate the chatbot in under 10 minutes\n- OpenAPI spec upload → tools auto-generated\n- no manual coding required\n- Knowledge base upload (PDFs\n- URLs\n- docs) → semantic search powered answers\n- Full conversation memory per user session\n- Site owners have complete control over what the agent can and cannot do\n- Multi-tenant: each site's data\n- tools\n- and conversations are fully isolated\n- Production-grade: secure\n- observable\n- scalable\nTeam\n\n- Himanshu Budhiraja\n- Prakhar Nigam\n- Dhruv Dhiman\nTechnologies\n\n- TypeScript\n- Node.js (ESM)\n- pnpm + Turborepo monorepo\n- Vercel AI SDK\n- Anthropic/OpenAI adapters\n- MCP SDK\n- Zod\n- React 19\n- Next.js\n- Tailwind CSS\n- Recharts\n- Sandboxed iframe execution: QuickJS (WASM)\n- E2B\n- PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 7.4,
+        "context_precision": 3,
+        "context_recall": 6.666666666666666,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer states that there is no information about a project named \"Project Navigator.\" However, the reference context clearly provides a detailed list of technologies (Node.js, TypeScript, Next.js, PostgreSQL, etc.) for the project described. The model failed to recognize the context as the source material for the question, resulting in a completely ungrounded response.",
+        "relevance": "LLM relevance: 9.0/10, Semantic: 5.0/10",
+        "context_precision": "3 of 10 context chunks relevant (30.0%)",
+        "context_recall": "Missing 1 facts: Project Navigator utilizes RAG (Retrieval-Augmented Generation).",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 25.28998418s."
+      },
+      "overallScore": 5.413333333333333
+    },
+    {
+      "question": "Who are the team members working on Project Navigator?",
+      "answer": "I don't have enough information to answer that. The provided project context does not contain a project named \"Project Navigator.\"",
+      "expectedAnswer": "The team members working on Project Navigator are Himanshu Budhiraja, Prakhar Nigam, and Dhruv Dhiman.",
+      "context": "Team\n\n- Himanshu Budhiraja\n- Prakhar Nigam\n- Dhruv Dhiman\nOverview\n\nA multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot understands the host product, can navigate between pages, call the product's own APIs, and answer questions from a knowledge base — all on behalf of the end user.\nTechnologies\n\n- Node.js\n- TypeScript\n- OpenAI\n- PostgreSQL\n- Next.js\n- RAG (Retrieval-Augmented Generation)\nFeatures\n\n- Any web product can integrate the chatbot in under 10 minutes\n- OpenAPI spec upload → tools auto-generated\n- no manual coding required\n- Knowledge base upload (PDFs\n- URLs\n- docs) → semantic search powered answers\n- Full conversation memory per user session\n- Site owners have complete control over what the agent can and cannot do\n- Multi-tenant: each site's data\n- tools\n- and conversations are fully isolated\n- Production-grade: secure\n- observable\n- scalable\nTeam\n\n- Shivankul\n- Rohit\n- Nisha\n- Tanmay",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 6.666666666666666,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 23.428935792s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "10 of 10 context chunks relevant (100.0%)",
+        "context_recall": "Missing 1 facts: The team members working on Project Navigator are Himanshu Budhiraja",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 12.941803911s."
+      },
+      "overallScore": 6.333333333333333
+    },
+    {
+      "question": "What is Project Navigator and how can web products integrate with it?",
+      "answer": "I don't have enough information to answer that. The provided project context does not contain information about a project named \"Project Navigator.\"",
+      "expectedAnswer": "Project Navigator is a multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag in under 10 minutes. It auto-generates tools from OpenAPI specs and supports knowledge base semantic search.",
+      "context": "Overview\n\nA multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot understands the host product, can navigate between pages, call the product's own APIs, and answer questions from a knowledge base — all on behalf of the end user.\nFeatures\n\n- Any web product can integrate the chatbot in under 10 minutes\n- OpenAPI spec upload → tools auto-generated\n- no manual coding required\n- Knowledge base upload (PDFs\n- URLs\n- docs) → semantic search powered answers\n- Full conversation memory per user session\n- Site owners have complete control over what the agent can and cannot do\n- Multi-tenant: each site's data\n- tools\n- and conversations are fully isolated\n- Production-grade: secure\n- observable\n- scalable\nTechnologies\n\n- Node.js\n- TypeScript\n- OpenAI\n- PostgreSQL\n- Next.js\n- RAG (Retrieval-Augmented Generation)\nTeam\n\n- Himanshu Budhiraja\n- Prakhar Nigam\n- Dhruv Dhiman\nOverview\n\nA customization layer you drop into your product so the UI can change itself for each individual user.\n\n**The problem it solves:** In B2B SaaS, every customer wants the product slightly differently. Normally that means your team building bespoke features forever. DynamicUi lets the user do it themselves — no code changes on your side.\n\n**How it works, in one line:** It's an embedded AI agent. The user asks for something in plain language (\"show my balances as a donut chart\", \"make this section green\", \"rename this heading\"), and the agent builds or modifies that piece of UI right there — using your product's own components and your own API, acting as the signed-in user.\n\n**Two important guarantees:**\n\n- Your source code is never touched — everything happens in a sandboxed layer on top\n- The agent can only do what the logged-in user is already allowed to do, since it goes through your own API — plus approvals and confirmations on anything destructive",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 11.076247977s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "14 of 14 context chunks relevant (100.0%)",
+        "context_recall": "All facts present in context (2/2)",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 2.763058455s."
+      },
+      "overallScore": 7
+    },
+    {
+      "question": "What key features does EverTest provide?",
+      "answer": "EverTest provides the following features:\n\n*   AI Test Generation\n*   Self-Healing Locators\n*   Visual Comparison\n*   Cloud Execution\n*   Test Scheduling\n*   CI/CD\n*   Detailed Reports\n*   Role-Based Access Control\n*   Project/Organization Management\n*   Cross-Browser Testing\n*   Screenshots\n*   Network/API Failure Detection",
+      "expectedAnswer": "EverTest features include AI Test Generation, Self-Healing Locators, Visual Comparison, Cloud Execution, Test Scheduling, CI/CD integration, Detailed Reports, Role-Based Access Control, Project/Organization Management, Cross-Browser Testing, Screenshots, and Network/API Failure Detection.",
+      "context": "Features\n\n- AI Test Generation\n- Self-Healing Locators\n- Visual Comparison\n- Cloud Execution\n- Test Scheduling\n- CI/CD\n- Detailed Reports\n- Role-Based Access Control\n- Project/Organization Management\n- Cross-Browser Testing\n- Screenshots\n- Network/API Failure Detection\nOverview\n\nEverTest is an AI-powered, no-code test automation platform for web applications. It enables teams to create, execute, and manage automated tests without writing complex automation scripts. It helps improve test coverage, reliability, and execution speed while reducing manual testing effort.\nTechnologies\n\n- React\n- Tailwind CSS\n- shadcn/ui\n- Node.js\n- Python\nTeam\n\n- Abhishek Bhati\n- Zeeshan Haider\n- Mohd Shaim Rafi\n- Ashish Chaursiya\nFeatures\n\n- Any web product can integrate the chatbot in under 10 minutes\n- OpenAPI spec upload → tools auto-generated\n- no manual coding required\n- Knowledge base upload (PDFs\n- URLs\n- docs) → semantic search powered answers\n- Full conversation memory per user session\n- Site owners have complete control over what the agent can and cannot do\n- Multi-tenant: each site's data\n- tools\n- and conversations are fully isolated\n- Production-grade: secure\n- observable\n- scalable",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 1.090078173s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "10 of 10 context chunks relevant (100.0%)",
+        "context_recall": "All facts present in context (5/5)",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 51.627968152s."
+      },
+      "overallScore": 7
+    },
+    {
+      "question": "Who is on the EverTest team?",
+      "answer": "The team members for EverTest are:\n\n- Abhishek Bhati\n- Zeeshan Haider\n- Mohd Shaim Rafi\n- Ashish Chaursiya",
+      "expectedAnswer": "The EverTest team consists of Abhishek Bhati, Zeeshan Haider, Mohd Shaim Rafi, and Ashish Chaursiya.",
+      "context": "Team\n\n- Abhishek Bhati\n- Zeeshan Haider\n- Mohd Shaim Rafi\n- Ashish Chaursiya\nOverview\n\nEverTest is an AI-powered, no-code test automation platform for web applications. It enables teams to create, execute, and manage automated tests without writing complex automation scripts. It helps improve test coverage, reliability, and execution speed while reducing manual testing effort.\nTechnologies\n\n- React\n- Tailwind CSS\n- shadcn/ui\n- Node.js\n- Python\nFeatures\n\n- AI Test Generation\n- Self-Healing Locators\n- Visual Comparison\n- Cloud Execution\n- Test Scheduling\n- CI/CD\n- Detailed Reports\n- Role-Based Access Control\n- Project/Organization Management\n- Cross-Browser Testing\n- Screenshots\n- Network/API Failure Detection\nTeam\n\n- Himanshu Budhiraja\n- Prakhar Nigam\n- Dhruv Dhiman",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 49.856126998s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "10 of 10 context chunks relevant (100.0%)",
+        "context_recall": "All facts present in context (4/4)",
+        "coherence": "The text is extremely clear, concise, and perfectly structured for its intended purpose (listing team members). It is logically organized, easy to follow, contains no contradictions, and uses straightforward language."
+      },
+      "overallScore": 7
+    },
+    {
+      "question": "What tech stack is EverTest built with?",
+      "answer": "EverTest is built with the following technologies:\n\n*   React\n*   Tailwind CSS\n*   shadcn/ui\n*   Node.js\n*   Python",
+      "expectedAnswer": "EverTest is built with React, Tailwind CSS, shadcn/ui, Node.js, and Python.",
+      "context": "Technologies\n\n- React\n- Tailwind CSS\n- shadcn/ui\n- Node.js\n- Python\nOverview\n\nEverTest is an AI-powered, no-code test automation platform for web applications. It enables teams to create, execute, and manage automated tests without writing complex automation scripts. It helps improve test coverage, reliability, and execution speed while reducing manual testing effort.\nFeatures\n\n- AI Test Generation\n- Self-Healing Locators\n- Visual Comparison\n- Cloud Execution\n- Test Scheduling\n- CI/CD\n- Detailed Reports\n- Role-Based Access Control\n- Project/Organization Management\n- Cross-Browser Testing\n- Screenshots\n- Network/API Failure Detection\nTeam\n\n- Abhishek Bhati\n- Zeeshan Haider\n- Mohd Shaim Rafi\n- Ashish Chaursiya\nTechnologies\n\n- TypeScript\n- Node.js (ESM)\n- pnpm + Turborepo monorepo\n- Vercel AI SDK\n- Anthropic/OpenAI adapters\n- MCP SDK\n- Zod\n- React 19\n- Next.js\n- Tailwind CSS\n- Recharts\n- Sandboxed iframe execution: QuickJS (WASM)\n- E2B\n- PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 8,
+        "context_precision": 4,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer includes technologies like \"shadcn/ui\", \"Node.js\", and \"Python\". While Node.js is mentioned in the context under the Technologies section, Python is not listed anywhere in the context. Additionally, the context lists a much more extensive and specific tech stack (TypeScript, Next.js, Vercel AI SDK, PGlite/Postgres, QuickJS, E2B, etc.) and misses the first \"Technologies\" list in the context, suggesting the generated answer may be referencing a different source or hallucinating the inclusion of Python and specific UI libraries.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 5.0/10",
+        "context_precision": "4 of 10 context chunks relevant (40.0%)",
+        "context_recall": "All facts present in context (5/5)",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 29.375892388s."
+      },
+      "overallScore": 7
+    },
+    {
+      "question": "What security guarantees does Dynamic Software Interfaces provide?",
+      "answer": "DynamicUi provides the following security guarantees:\n\n*   **Source code integrity:** Your source code is never touched, as all modifications occur in a sandboxed layer on top of your product.\n*   **Permission-based access:** The agent can only perform actions that the logged-in user is already authorized to do, as it operates through your own API.\n*   **Destructive action protection:** The system requires approvals and confirmations for any destructive actions.\n*   **Isolation:** The platform is multi-tenant, ensuring that each site's data, tools, and conversations are fully isolated.\n*   **Control:** Site owners have complete control over what the agent can and cannot do.\n*   **Production-grade:** The system is designed to be secure, observable, and scalable.",
+      "expectedAnswer": "Dynamic Software Interfaces guarantees that source code is never touched (execution occurs in a sandboxed layer on top) and that the agent can only perform actions that the logged-in user is already authorized to do through the product's own API, with approvals and confirmations for destructive actions.",
+      "context": "Overview\n\nA customization layer you drop into your product so the UI can change itself for each individual user.\n\n**The problem it solves:** In B2B SaaS, every customer wants the product slightly differently. Normally that means your team building bespoke features forever. DynamicUi lets the user do it themselves — no code changes on your side.\n\n**How it works, in one line:** It's an embedded AI agent. The user asks for something in plain language (\"show my balances as a donut chart\", \"make this section green\", \"rename this heading\"), and the agent builds or modifies that piece of UI right there — using your product's own components and your own API, acting as the signed-in user.\n\n**Two important guarantees:**\n\n- Your source code is never touched — everything happens in a sandboxed layer on top\n- The agent can only do what the logged-in user is already allowed to do, since it goes through your own API — plus approvals and confirmations on anything destructive\nTechnologies\n\n- TypeScript\n- Node.js (ESM)\n- pnpm + Turborepo monorepo\n- Vercel AI SDK\n- Anthropic/OpenAI adapters\n- MCP SDK\n- Zod\n- React 19\n- Next.js\n- Tailwind CSS\n- Recharts\n- Sandboxed iframe execution: QuickJS (WASM)\n- E2B\n- PGlite (local dev) / Postgres (production)\nTeam\n\n- Shivankul\n- Rohit\n- Nisha\n- Tanmay\nFeatures\n\n- Personalized UI per user — each person's dashboard can look and behave differently\n- and their version is saved for them\n- Build new views on demand — the agent composes a live view from your existing data and components\n- Edit in place — hover any section\n- describe the change\n- apply it\n- Automations — describe a recurring task\n- it becomes a standing automation\nFeatures\n\n- Any web product can integrate the chatbot in under 10 minutes\n- OpenAPI spec upload → tools auto-generated\n- no manual coding required\n- Knowledge base upload (PDFs\n- URLs\n- docs) → semantic search powered answers\n- Full conversation memory per user session\n- Site owners have complete control over what the agent can and cannot do\n- Multi-tenant: each site's data\n- tools\n- and conversations are fully isolated\n- Production-grade: secure\n- observable\n- scalable",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 0,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 27.532057853s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "14 of 14 context chunks relevant (100.0%)",
+        "context_recall": "Missing 1 facts: with approvals and confirmations for destructive actions",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 17.084765341s."
+      },
+      "overallScore": 5
+    },
+    {
+      "question": "What technologies are used in Dynamic Software Interfaces?",
+      "answer": "The technologies used in DynamicUi are:\n\n*   TypeScript\n*   Node.js (ESM)\n*   pnpm + Turborepo monorepo\n*   Vercel AI SDK\n*   Anthropic/OpenAI adapters\n*   MCP SDK\n*   Zod\n*   React 19\n*   Next.js\n*   Tailwind CSS\n*   Recharts\n*   Sandboxed iframe execution: QuickJS (WASM)\n*   E2B\n*   PGlite (local dev) / Postgres (production)",
+      "expectedAnswer": "Dynamic Software Interfaces uses TypeScript, Node.js (ESM), pnpm + Turborepo monorepo, Vercel AI SDK, Anthropic/OpenAI adapters, MCP SDK, Zod, React 19, Next.js, Tailwind CSS, Recharts, QuickJS (WASM) and E2B for sandboxed iframe execution, and PGlite / Postgres.",
+      "context": "Technologies\n\n- TypeScript\n- Node.js (ESM)\n- pnpm + Turborepo monorepo\n- Vercel AI SDK\n- Anthropic/OpenAI adapters\n- MCP SDK\n- Zod\n- React 19\n- Next.js\n- Tailwind CSS\n- Recharts\n- Sandboxed iframe execution: QuickJS (WASM)\n- E2B\n- PGlite (local dev) / Postgres (production)\nFeatures\n\n- Personalized UI per user — each person's dashboard can look and behave differently\n- and their version is saved for them\n- Build new views on demand — the agent composes a live view from your existing data and components\n- Edit in place — hover any section\n- describe the change\n- apply it\n- Automations — describe a recurring task\n- it becomes a standing automation\nOverview\n\nA customization layer you drop into your product so the UI can change itself for each individual user.\n\n**The problem it solves:** In B2B SaaS, every customer wants the product slightly differently. Normally that means your team building bespoke features forever. DynamicUi lets the user do it themselves — no code changes on your side.\n\n**How it works, in one line:** It's an embedded AI agent. The user asks for something in plain language (\"show my balances as a donut chart\", \"make this section green\", \"rename this heading\"), and the agent builds or modifies that piece of UI right there — using your product's own components and your own API, acting as the signed-in user.\n\n**Two important guarantees:**\n\n- Your source code is never touched — everything happens in a sandboxed layer on top\n- The agent can only do what the logged-in user is already allowed to do, since it goes through your own API — plus approvals and confirmations on anything destructive\nTeam\n\n- Shivankul\n- Rohit\n- Nisha\n- Tanmay\nTechnologies\n\n- TypeScript\n- Node.js (ESM)\n- pnpm + Turborepo monorepo\n- Vercel AI SDK\n- Anthropic/OpenAI adapters\n- MCP SDK\n- Zod\n- React 19\n- Next.js\n- Tailwind CSS\n- Recharts\n- Sandboxed iframe execution: QuickJS (WASM)\n- E2B\n- PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 8,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 15.449439045s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "14 of 14 context chunks relevant (100.0%)",
+        "context_recall": "Missing 1 facts: Dynamic Software Interfaces uses TypeScript",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 4.330826178s."
+      },
+      "overallScore": 6.6
+    },
+    {
+      "question": "What is Within Health and what problem does it solve?",
+      "answer": "Within Health is a radiology follow-up management platform designed to ensure that important findings and follow-up recommendations in radiology reports are not missed or delayed.\n\nIt solves the problem of missed or delayed follow-up care by using AI and Natural Language Processing (NLP) to identify recommendations, track them through their required follow-up period, and automate communication with patients and referring physicians. By closing this communication and care loop, the platform supports timely follow-up, early clinical action, and better patient outcomes.",
+      "expectedAnswer": "Within Health is a radiology follow-up management platform that ensures important findings and follow-up recommendations in radiology reports are not missed or delayed. It uses AI and NLP to identify recommendations and automates communication with patients and referring physicians.",
+      "context": "Overview\n\nWithin Health is a radiology follow-up management platform developed to help ensure that important findings and follow-up recommendations in radiology reports are not missed or delayed.\n\nThe platform uses AI and Natural Language Processing (NLP) to identify follow-up recommendations from radiology reports and track them through their required follow-up period. It helps radiology practices manage these recommendations and automate communication with patients and referring physicians through reminders and outreach.\n\nThe system provides visibility into the complete follow-up process from identifying a recommendation to tracking its status and confirming that the required action has been taken. By helping close this communication and care loop, the platform aims to support timely follow-up, early clinical action, and better patient outcomes.\nTechnologies\n\n- React\n- Python\nTeam\n\n- Aniket Nandwana\n- Shashank Saurav\nFeatures\n\n- AI-Based Recommendation Detection – Identifies follow-up recommendations from radiology reports using AI and Natural Language Processing (NLP)\n- Follow-Up Tracking – Tracks recommendations from the time they are identified through completion or resolution\n- Patient & Physician Outreach – Automates reminders and communications to patients and referring physicians when follow-up is required\n- Follow-Up Queue – Provides a centralized view of recommendations categorized by statuses such as overdue\n- coming due\n- non-compliant\n- and adherent\n- Patient Details & Timeline – Displays patient information\n- recommendation history\n- communication activities\n- and follow-up events in a timeline\n- Multiple Communication Channels – Supports outreach through SMS\n- email\n- fax\n- phone calls\n- and print\n- Recommendation Status Management – Helps care teams monitor and update the status of follow-up recommendations\n- Search & Filtering – Enables users to quickly find patients and recommendations using details such as patient name\n- MRN\n- phone number\n- and accession number\n- Reporting & Visibility – Provides summary counts and dashboards to help teams monitor follow-up performance and outstanding recommendations\n- Closed-Loop Follow-Up – Ensures recommendations are actively tracked until the required follow-up action is completed\nOverview\n\nA customization layer you drop into your product so the UI can change itself for each individual user.\n\n**The problem it solves:** In B2B SaaS, every customer wants the product slightly differently. Normally that means your team building bespoke features forever. DynamicUi lets the user do it themselves — no code changes on your side.\n\n**How it works, in one line:** It's an embedded AI agent. The user asks for something in plain language (\"show my balances as a donut chart\", \"make this section green\", \"rename this heading\"), and the agent builds or modifies that piece of UI right there — using your product's own components and your own API, acting as the signed-in user.\n\n**Two important guarantees:**\n\n- Your source code is never touched — everything happens in a sandboxed layer on top\n- The agent can only do what the logged-in user is already allowed to do, since it goes through your own API — plus approvals and confirmations on anything destructive",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 2.437241592s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "16 of 16 context chunks relevant (100.0%)",
+        "context_recall": "All facts present in context (2/2)",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 53.386276044s."
+      },
+      "overallScore": 7
+    },
+    {
+      "question": "Who is working on the Within Health project?",
+      "answer": "The team members working on the Within Health project are:\n\n*   Aniket Nandwana\n*   Shashank Saurav\n*   Shivankul\n*   Rohit\n*   Nisha\n*   Tanmay",
+      "expectedAnswer": "The Within Health team members are Aniket Nandwana and Shashank Saurav.",
+      "context": "Technologies\n\n- React\n- Python\nTeam\n\n- Aniket Nandwana\n- Shashank Saurav\nOverview\n\nWithin Health is a radiology follow-up management platform developed to help ensure that important findings and follow-up recommendations in radiology reports are not missed or delayed.\n\nThe platform uses AI and Natural Language Processing (NLP) to identify follow-up recommendations from radiology reports and track them through their required follow-up period. It helps radiology practices manage these recommendations and automate communication with patients and referring physicians through reminders and outreach.\n\nThe system provides visibility into the complete follow-up process from identifying a recommendation to tracking its status and confirming that the required action has been taken. By helping close this communication and care loop, the platform aims to support timely follow-up, early clinical action, and better patient outcomes.\nFeatures\n\n- AI-Based Recommendation Detection – Identifies follow-up recommendations from radiology reports using AI and Natural Language Processing (NLP)\n- Follow-Up Tracking – Tracks recommendations from the time they are identified through completion or resolution\n- Patient & Physician Outreach – Automates reminders and communications to patients and referring physicians when follow-up is required\n- Follow-Up Queue – Provides a centralized view of recommendations categorized by statuses such as overdue\n- coming due\n- non-compliant\n- and adherent\n- Patient Details & Timeline – Displays patient information\n- recommendation history\n- communication activities\n- and follow-up events in a timeline\n- Multiple Communication Channels – Supports outreach through SMS\n- email\n- fax\n- phone calls\n- and print\n- Recommendation Status Management – Helps care teams monitor and update the status of follow-up recommendations\n- Search & Filtering – Enables users to quickly find patients and recommendations using details such as patient name\n- MRN\n- phone number\n- and accession number\n- Reporting & Visibility – Provides summary counts and dashboards to help teams monitor follow-up performance and outstanding recommendations\n- Closed-Loop Follow-Up – Ensures recommendations are actively tracked until the required follow-up action is completed\nTeam\n\n- Shivankul\n- Rohit\n- Nisha\n- Tanmay",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 10,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 51.681776755s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "12 of 12 context chunks relevant (100.0%)",
+        "context_recall": "All facts present in context (1/1)",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 43.403838952s."
+      },
+      "overallScore": 7
+    },
+    {
+      "question": "What communication channels does Within Health support for patient and physician outreach?",
+      "answer": "Within Health supports the following communication channels for patient and physician outreach:\n\n*   SMS\n*   Email\n*   Fax\n*   Phone calls\n*   Print",
+      "expectedAnswer": "Within Health supports outreach through SMS, email, fax, phone calls, and print.",
+      "context": "Features\n\n- AI-Based Recommendation Detection – Identifies follow-up recommendations from radiology reports using AI and Natural Language Processing (NLP)\n- Follow-Up Tracking – Tracks recommendations from the time they are identified through completion or resolution\n- Patient & Physician Outreach – Automates reminders and communications to patients and referring physicians when follow-up is required\n- Follow-Up Queue – Provides a centralized view of recommendations categorized by statuses such as overdue\n- coming due\n- non-compliant\n- and adherent\n- Patient Details & Timeline – Displays patient information\n- recommendation history\n- communication activities\n- and follow-up events in a timeline\n- Multiple Communication Channels – Supports outreach through SMS\n- email\n- fax\n- phone calls\n- and print\n- Recommendation Status Management – Helps care teams monitor and update the status of follow-up recommendations\n- Search & Filtering – Enables users to quickly find patients and recommendations using details such as patient name\n- MRN\n- phone number\n- and accession number\n- Reporting & Visibility – Provides summary counts and dashboards to help teams monitor follow-up performance and outstanding recommendations\n- Closed-Loop Follow-Up – Ensures recommendations are actively tracked until the required follow-up action is completed\nOverview\n\nWithin Health is a radiology follow-up management platform developed to help ensure that important findings and follow-up recommendations in radiology reports are not missed or delayed.\n\nThe platform uses AI and Natural Language Processing (NLP) to identify follow-up recommendations from radiology reports and track them through their required follow-up period. It helps radiology practices manage these recommendations and automate communication with patients and referring physicians through reminders and outreach.\n\nThe system provides visibility into the complete follow-up process from identifying a recommendation to tracking its status and confirming that the required action has been taken. By helping close this communication and care loop, the platform aims to support timely follow-up, early clinical action, and better patient outcomes.\nTechnologies\n\n- React\n- Python\nTeam\n\n- Aniket Nandwana\n- Shashank Saurav\nTechnologies\n\n- TypeScript\n- Node.js (ESM)\n- pnpm + Turborepo monorepo\n- Vercel AI SDK\n- Anthropic/OpenAI adapters\n- MCP SDK\n- Zod\n- React 19\n- Next.js\n- Tailwind CSS\n- Recharts\n- Sandboxed iframe execution: QuickJS (WASM)\n- E2B\n- PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 10,
+        "relevance": 8,
+        "context_precision": 1.6666666666666665,
+        "context_recall": 6.666666666666666,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "The generated answer is fully grounded in the provided context. Every listed communication channel (SMS, email, fax, phone calls, and print) is explicitly mentioned under the \"Multiple Communication Channels\" feature in the reference text. There are no hallucinations, unsupported claims, or contradictions.",
+        "relevance": "LLM relevance: 10.0/10, Semantic: 5.0/10",
+        "context_precision": "2 of 12 context chunks relevant (16.7%)",
+        "context_recall": "Missing 1 facts: Outreach is also conducted via phone calls and print methods.",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 13.984062379s."
+      },
+      "overallScore": 7.2666666666666675
+    },
+    {
+      "question": "Who is the lead mobile engineer on Project Apollo?",
+      "answer": "I don't have enough information to answer that.",
+      "expectedAnswer": "I don't have enough information to answer that.",
+      "context": "Team\n\n- Abhishek Bhati\n- Zeeshan Haider\n- Mohd Shaim Rafi\n- Ashish Chaursiya\nTeam\n\n- Himanshu Budhiraja\n- Prakhar Nigam\n- Dhruv Dhiman\nTechnologies\n\n- Node.js\n- TypeScript\n- OpenAI\n- PostgreSQL\n- Next.js\n- RAG (Retrieval-Augmented Generation)\nOverview\n\nA multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag. The chatbot understands the host product, can navigate between pages, call the product's own APIs, and answer questions from a knowledge base — all on behalf of the end user.\nOverview\n\nsjsdlaksndlaksndalns",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 0,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 12.01550949s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "10 of 10 context chunks relevant (100.0%)",
+        "context_recall": "Missing 1 facts: I don't have enough information to answer that",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 1.323192302s."
+      },
+      "overallScore": 5
+    },
+    {
+      "question": "What SQL database engine does EverTest use for its data storage?",
+      "answer": "EverTest uses PGlite for local development and Postgres for production.",
+      "expectedAnswer": "I don't have enough information to answer that.",
+      "context": "Technologies\n\n- React\n- Tailwind CSS\n- shadcn/ui\n- Node.js\n- Python\nOverview\n\nEverTest is an AI-powered, no-code test automation platform for web applications. It enables teams to create, execute, and manage automated tests without writing complex automation scripts. It helps improve test coverage, reliability, and execution speed while reducing manual testing effort.\nFeatures\n\n- AI Test Generation\n- Self-Healing Locators\n- Visual Comparison\n- Cloud Execution\n- Test Scheduling\n- CI/CD\n- Detailed Reports\n- Role-Based Access Control\n- Project/Organization Management\n- Cross-Browser Testing\n- Screenshots\n- Network/API Failure Detection\nTeam\n\n- Abhishek Bhati\n- Zeeshan Haider\n- Mohd Shaim Rafi\n- Ashish Chaursiya\nTechnologies\n\n- TypeScript\n- Node.js (ESM)\n- pnpm + Turborepo monorepo\n- Vercel AI SDK\n- Anthropic/OpenAI adapters\n- MCP SDK\n- Zod\n- React 19\n- Next.js\n- Tailwind CSS\n- Recharts\n- Sandboxed iframe execution: QuickJS (WASM)\n- E2B\n- PGlite (local dev) / Postgres (production)",
+      "scores": {
+        "faithfulness": 0,
+        "relevance": 5,
+        "context_precision": 10,
+        "context_recall": 0,
+        "coherence": 10
+      },
+      "explanations": {
+        "faithfulness": "Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 59.478745501s.",
+        "relevance": "LLM relevance: 5.0/10, Semantic: 5.0/10",
+        "context_precision": "10 of 10 context chunks relevant (100.0%)",
+        "context_recall": "Missing 1 facts: I don't have enough information to answer that",
+        "coherence": "Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 49.99086501s."
+      },
+      "overallScore": 5
+    }
+  ]
+}

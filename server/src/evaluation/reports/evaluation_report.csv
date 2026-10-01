@@ -1,0 +1,134 @@
+question,answer,expected_answer,faithfulness,relevance,context_precision,context_recall,coherence,overall_score,faithfulness_explanation,relevance_explanation,context_precision_explanation,context_recall_explanation,coherence_explanation
+What technologies are used in Project Navigator?,"I don't have enough information to answer that. The provided project context does not contain information about a project named ""Project Navigator.""","Project Navigator uses Node.js, TypeScript, OpenAI, PostgreSQL, Next.js, and RAG (Retrieval-Augmented Generation).",0,7.4,3,6.666666666666666,10,5.413333333333333,"The generated answer states that there is no information about a project named ""Project Navigator."" However, the reference context clearly provides a detailed list of technologies (Node.js, TypeScript, Next.js, PostgreSQL, etc.) for the project described. The model failed to recognize the context as the source material for the question, resulting in a completely ungrounded response.","LLM relevance: 9.0/10, Semantic: 5.0/10",3 of 10 context chunks relevant (30.0%),Missing 1 facts: Project Navigator utilizes RAG (Retrieval-Augmented Generation).,"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 25.28998418s."
+Who are the team members working on Project Navigator?,"I don't have enough information to answer that. The provided project context does not contain a project named ""Project Navigator.""","The team members working on Project Navigator are Himanshu Budhiraja, Prakhar Nigam, and Dhruv Dhiman.",0,5,10,6.666666666666666,10,6.333333333333333,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 23.428935792s.","LLM relevance: 5.0/10, Semantic: 5.0/10",10 of 10 context chunks relevant (100.0%),Missing 1 facts: The team members working on Project Navigator are Himanshu Budhiraja,"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 12.941803911s."
+What is Project Navigator and how can web products integrate with it?,"I don't have enough information to answer that. The provided project context does not contain information about a project named ""Project Navigator.""",Project Navigator is a multi-tenant SaaS platform that lets any website owner embed an AI-powered agentic chatbot into their product via a single script tag in under 10 minutes. It auto-generates tools from OpenAPI specs and supports knowledge base semantic search.,0,5,10,10,10,7,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 11.076247977s.","LLM relevance: 5.0/10, Semantic: 5.0/10",14 of 14 context chunks relevant (100.0%),All facts present in context (2/2),"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 2.763058455s."
+What key features does EverTest provide?,"EverTest provides the following features:
+
+*   AI Test Generation
+*   Self-Healing Locators
+*   Visual Comparison
+*   Cloud Execution
+*   Test Scheduling
+*   CI/CD
+*   Detailed Reports
+*   Role-Based Access Control
+*   Project/Organization Management
+*   Cross-Browser Testing
+*   Screenshots
+*   Network/API Failure Detection","EverTest features include AI Test Generation, Self-Healing Locators, Visual Comparison, Cloud Execution, Test Scheduling, CI/CD integration, Detailed Reports, Role-Based Access Control, Project/Organization Management, Cross-Browser Testing, Screenshots, and Network/API Failure Detection.",0,5,10,10,10,7,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 1.090078173s.","LLM relevance: 5.0/10, Semantic: 5.0/10",10 of 10 context chunks relevant (100.0%),All facts present in context (5/5),"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 51.627968152s."
+Who is on the EverTest team?,"The team members for EverTest are:
+
+- Abhishek Bhati
+- Zeeshan Haider
+- Mohd Shaim Rafi
+- Ashish Chaursiya","The EverTest team consists of Abhishek Bhati, Zeeshan Haider, Mohd Shaim Rafi, and Ashish Chaursiya.",0,5,10,10,10,7,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 49.856126998s.","LLM relevance: 5.0/10, Semantic: 5.0/10",10 of 10 context chunks relevant (100.0%),All facts present in context (4/4),"The text is extremely clear, concise, and perfectly structured for its intended purpose (listing team members). It is logically organized, easy to follow, contains no contradictions, and uses straightforward language."
+What tech stack is EverTest built with?,"EverTest is built with the following technologies:
+
+*   React
+*   Tailwind CSS
+*   shadcn/ui
+*   Node.js
+*   Python","EverTest is built with React, Tailwind CSS, shadcn/ui, Node.js, and Python.",3,8,4,10,10,7,"The generated answer includes technologies like ""shadcn/ui"", ""Node.js"", and ""Python"". While Node.js is mentioned in the context under the Technologies section, Python is not listed anywhere in the context. Additionally, the context lists a much more extensive and specific tech stack (TypeScript, Next.js, Vercel AI SDK, PGlite/Postgres, QuickJS, E2B, etc.) and misses the first ""Technologies"" list in the context, suggesting the generated answer may be referencing a different source or hallucinating the inclusion of Python and specific UI libraries.","LLM relevance: 10.0/10, Semantic: 5.0/10",4 of 10 context chunks relevant (40.0%),All facts present in context (5/5),"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 29.375892388s."
+What security guarantees does Dynamic Software Interfaces provide?,"DynamicUi provides the following security guarantees:
+
+*   **Source code integrity:** Your source code is never touched, as all modifications occur in a sandboxed layer on top of your product.
+*   **Permission-based access:** The agent can only perform actions that the logged-in user is already authorized to do, as it operates through your own API.
+*   **Destructive action protection:** The system requires approvals and confirmations for any destructive actions.
+*   **Isolation:** The platform is multi-tenant, ensuring that each site's data, tools, and conversations are fully isolated.
+*   **Control:** Site owners have complete control over what the agent can and cannot do.
+*   **Production-grade:** The system is designed to be secure, observable, and scalable.","Dynamic Software Interfaces guarantees that source code is never touched (execution occurs in a sandboxed layer on top) and that the agent can only perform actions that the logged-in user is already authorized to do through the product's own API, with approvals and confirmations for destructive actions.",0,5,10,0,10,5,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 27.532057853s.","LLM relevance: 5.0/10, Semantic: 5.0/10",14 of 14 context chunks relevant (100.0%),Missing 1 facts: with approvals and confirmations for destructive actions,"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 17.084765341s."
+What technologies are used in Dynamic Software Interfaces?,"The technologies used in DynamicUi are:
+
+*   TypeScript
+*   Node.js (ESM)
+*   pnpm + Turborepo monorepo
+*   Vercel AI SDK
+*   Anthropic/OpenAI adapters
+*   MCP SDK
+*   Zod
+*   React 19
+*   Next.js
+*   Tailwind CSS
+*   Recharts
+*   Sandboxed iframe execution: QuickJS (WASM)
+*   E2B
+*   PGlite (local dev) / Postgres (production)","Dynamic Software Interfaces uses TypeScript, Node.js (ESM), pnpm + Turborepo monorepo, Vercel AI SDK, Anthropic/OpenAI adapters, MCP SDK, Zod, React 19, Next.js, Tailwind CSS, Recharts, QuickJS (WASM) and E2B for sandboxed iframe execution, and PGlite / Postgres.",0,5,10,8,10,6.6,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 15.449439045s.","LLM relevance: 5.0/10, Semantic: 5.0/10",14 of 14 context chunks relevant (100.0%),Missing 1 facts: Dynamic Software Interfaces uses TypeScript,"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 4.330826178s."
+What is Within Health and what problem does it solve?,"Within Health is a radiology follow-up management platform designed to ensure that important findings and follow-up recommendations in radiology reports are not missed or delayed.
+
+It solves the problem of missed or delayed follow-up care by using AI and Natural Language Processing (NLP) to identify recommendations, track them through their required follow-up period, and automate communication with patients and referring physicians. By closing this communication and care loop, the platform supports timely follow-up, early clinical action, and better patient outcomes.",Within Health is a radiology follow-up management platform that ensures important findings and follow-up recommendations in radiology reports are not missed or delayed. It uses AI and NLP to identify recommendations and automates communication with patients and referring physicians.,0,5,10,10,10,7,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 2.437241592s.","LLM relevance: 5.0/10, Semantic: 5.0/10",16 of 16 context chunks relevant (100.0%),All facts present in context (2/2),"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 53.386276044s."
+Who is working on the Within Health project?,"The team members working on the Within Health project are:
+
+*   Aniket Nandwana
+*   Shashank Saurav
+*   Shivankul
+*   Rohit
+*   Nisha
+*   Tanmay",The Within Health team members are Aniket Nandwana and Shashank Saurav.,0,5,10,10,10,7,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 51.681776755s.","LLM relevance: 5.0/10, Semantic: 5.0/10",12 of 12 context chunks relevant (100.0%),All facts present in context (1/1),"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 43.403838952s."
+What communication channels does Within Health support for patient and physician outreach?,"Within Health supports the following communication channels for patient and physician outreach:
+
+*   SMS
+*   Email
+*   Fax
+*   Phone calls
+*   Print","Within Health supports outreach through SMS, email, fax, phone calls, and print.",10,8,1.6666666666666665,6.666666666666666,10,7.2666666666666675,"The generated answer is fully grounded in the provided context. Every listed communication channel (SMS, email, fax, phone calls, and print) is explicitly mentioned under the ""Multiple Communication Channels"" feature in the reference text. There are no hallucinations, unsupported claims, or contradictions.","LLM relevance: 10.0/10, Semantic: 5.0/10",2 of 12 context chunks relevant (16.7%),Missing 1 facts: Outreach is also conducted via phone calls and print methods.,"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 13.984062379s."
+Who is the lead mobile engineer on Project Apollo?,I don't have enough information to answer that.,I don't have enough information to answer that.,0,5,10,0,10,5,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 12.01550949s.","LLM relevance: 5.0/10, Semantic: 5.0/10",10 of 10 context chunks relevant (100.0%),Missing 1 facts: I don't have enough information to answer that,"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 1.323192302s."
+What SQL database engine does EverTest use for its data storage?,EverTest uses PGlite for local development and Postgres for production.,I don't have enough information to answer that.,0,5,10,0,10,5,"Evaluation error: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 59.478745501s.","LLM relevance: 5.0/10, Semantic: 5.0/10",10 of 10 context chunks relevant (100.0%),Missing 1 facts: I don't have enough information to answer that,"Basic coherence assessment: Gemini API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite
+Please retry in 49.99086501s."
+
+# Summary
+Overall Score,6.354871794871795
+Total Questions,13
+Duration (ms),164442
+Provider,gemini
+Model,gemini-3.5-flash-lite
+
+# Statistics
+Mean,6.354871794871794
+Median,7
+Std Dev,0.8674716334529312
+Min,5
+Max,7.2666666666666675
+Passed (%),53.84615384615385
