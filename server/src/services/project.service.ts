@@ -1,55 +1,29 @@
-import prisma from "../config/db";
+import { vectorStore, VECTOR_TABLE, VECTOR_SCHEMA } from "../config/llamaindex";
 import { CreateProjectInput } from "../types/project.types";
 
-export const checkProjectExists = async (
-  projectName: string,
-): Promise<boolean> => {
-  const existingProject = await prisma.projectChunk.findFirst({
-    where: {
-      projectName: {
-        equals: projectName.trim(),
-        mode: "insensitive",
-      },
-    },
-    select: {
-      id: true,
-    },
-  });
+export const checkProjectExists = async (projectName: string) => {
+  const db = await vectorStore.client();
+  const rows = await db.query(
+    `SELECT 1 FROM ${VECTOR_SCHEMA}.${VECTOR_TABLE} WHERE LOWER(metadata->>'projectName') = LOWER($1) LIMIT 1`,
+    [projectName.trim()],
+  );
 
-  return existingProject !== null;
+  return rows.length > 0;
 };
 
+const toList = (items: string[] | null) =>
+  items?.length ? items.map((item) => `- ${item}`).join("\n") : null;
+
 export const createProjectMarkdown = (project: CreateProjectInput): string => {
-  const technologies = project.technologies
-    ? project.technologies.map((technology) => `- ${technology}`).join("\n")
-    : "";
+  const sections = [
+    ["Overview", project.overview?.trim()],
+    ["Technologies", toList(project.technologies)],
+    ["Team", toList(project.team)],
+  ] as const;
 
-  const team = project.team
-    ? project.team.map((member) => `- ${member}`).join("\n")
-    : "";
+  const blocks = sections
+    .filter(([, body]) => body)
+    .map(([title, body]) => `## ${title}\n\n${body}`);
 
-  const features = project.features
-    ? project.features.map((feature) => `- ${feature}`).join("\n")
-    : "";
-
-  return `
-  # ${project.projectName}
-
-  ## Overview
-
-  ${project.overview ?? ""}
-
-  ## Technologies
-
-  ${technologies}
-
-  ## Team
-
-  ${team}
-
-  ## Features
-
-  ${features}
-
-`;
+  return [`# ${project.projectName}`, ...blocks].join("\n\n") + "\n";
 };

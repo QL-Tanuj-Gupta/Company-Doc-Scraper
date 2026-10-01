@@ -4,10 +4,8 @@ import {
   checkProjectExists,
   createProjectMarkdown,
 } from "../services/project.service";
-import {
-  saveProjectChunks,
-  splitProjectMarkdown,
-} from "../services/chunk.service";
+
+import { indexProjectWithLlamaindex } from "../services/chunk.service";
 
 export const addProject = async (req: Request, res: Response) => {
   try {
@@ -60,11 +58,8 @@ export const addProject = async (req: Request, res: Response) => {
     // Creating Project Markdown
     const markdown = createProjectMarkdown(project);
 
-    // Split Project into Chunks
-    const chunks = await splitProjectMarkdown(markdown);
-
-    // Save Chunks
-    await saveProjectChunks(project.projectName, chunks);
+    // Index project using llamaindex
+    await indexProjectWithLlamaindex(project.projectName, markdown);
 
     return res.status(201).json({
       success: true,
@@ -72,7 +67,6 @@ export const addProject = async (req: Request, res: Response) => {
       data: {
         project,
         markdown,
-        chunks,
       },
     });
   } catch (error) {
